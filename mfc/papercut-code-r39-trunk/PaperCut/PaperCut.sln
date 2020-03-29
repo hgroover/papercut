@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PaperCut", "PaperCut.vcproj", "{9E6CAED2-C80D-48EB-A444-B4671CB848E8}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PapercutSetup", "..\PapercutSetup\PapercutSetup.vdproj", "{BA86B64A-A8DA-4C15-9159-99CA271442DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{27DB94D4-3C53-4139-89D4-49544D2E1E65} = {27DB94D4-3C53-4139-89D4-49544D2E1E65}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PaperCutDeploy", "..\PaperCutDeploy\PaperCutDeploy.vcproj", "{27DB94D4-3C53-4139-89D4-49544D2E1E65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E6CAED2-C80D-48EB-A444-B4671CB848E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E6CAED2-C80D-48EB-A444-B4671CB848E8}.Debug|Win32.Build.0 = Debug|Win32
+		{9E6CAED2-C80D-48EB-A444-B4671CB848E8}.Release|Win32.ActiveCfg = Release|Win32
+		{9E6CAED2-C80D-48EB-A444-B4671CB848E8}.Release|Win32.Build.0 = Release|Win32
+		{BA86B64A-A8DA-4C15-9159-99CA271442DF}.Debug|Win32.ActiveCfg = Debug
+		{BA86B64A-A8DA-4C15-9159-99CA271442DF}.Release|Win32.ActiveCfg = Release
+		{27DB94D4-3C53-4139-89D4-49544D2E1E65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{27DB94D4-3C53-4139-89D4-49544D2E1E65}.Debug|Win32.Build.0 = Debug|Win32
+		{27DB94D4-3C53-4139-89D4-49544D2E1E65}.Release|Win32.ActiveCfg = Release|Win32
+		{27DB94D4-3C53-4139-89D4-49544D2E1E65}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1276 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PaperCut.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PaperCut.ico"
+IDR_PAPERCTYPE          ICON                    "res\\PaperCutDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_HENRY_GROOVER       BITMAP                  "res\\henry-faded.bmp"
+IDB_STELLATE_HELP       BITMAP                  "res\\stellate-new.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      IDC_SHAPE_GEO2X
+    BUTTON      IDC_SHAPE_GEO3X
+    SEPARATOR
+    BUTTON      IDC_STELLATE_25
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "&OFF (3d)",                   ID_IMPORT_OFF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Shape"
+    BEGIN
+        POPUP "&Create"
+        BEGIN
+            MENUITEM "&Tetrahedron",                IDC_SHAPE_CREATE_TETRA
+            MENUITEM "&Cube",                       ID_CREATE_CUBE
+            MENUITEM "&Hexahedron",                 IDC_SHAPE_CREATE_HEX
+            MENUITEM "&Octahedron",                 IDC_SHAPE_CREATE_OCTA
+            MENUITEM "&Dodecahedron",               IDC_SHAPE_CREATE_DODECA
+            MENUITEM "&Icosahedron",                IDC_SHAPE_CREATE_ICOSA
+            MENUITEM SEPARATOR
+            POPUP "&Archimedean"
+            BEGIN
+                MENUITEM "&Cuboctahedron\tA1",          ID_ARCHIMEDEAN_CUBOCTAHEDRON
+                MENUITEM "&Truncated octahedron\tA12",  ID_ARCHIMEDEAN_TRUNCATEDOCTAHEDRON
+                MENUITEM "&Buckyball (Truncated icosahedron)\tA11", ID_ARCHIMEDEAN_BUCKYBALL
+                MENUITEM "&Snub cube\tA7",              ID_ARCHIMEDEAN_SNUBCUBE
+            END
+            POPUP "Co&mpounds"
+            BEGIN
+                MENUITEM "&Kepler's Stella Octangula",  ID_CREATE_KEPLER
+                MENUITEM "&Cube-Octahedron compound",   ID_COMPOUNDS_CUBE_OCTAHEDRON
+                MENUITEM "&Icosahedron-Dodecahedron compound", ID_COMPOUNDS_ICOSA_DODECA
+            END
+            POPUP "&Polygon"
+            BEGIN
+                MENUITEM "&Triangle",                   IDC_SHAPE_CREATE_TRIANGLE
+                MENUITEM "&Square",                     IDC_SHAPE_CREATE_SQUARE
+                MENUITEM "&Pentagon",                   IDC_SHAPE_CREATE_PENTAGON
+                MENUITEM "&Hexagon",                    IDC_SHAPE_CREATE_HEXAGON
+                MENUITEM "&Octagon",                    IDC_SHAPE_CREATE_OCTAGON
+                MENUITEM "&Decagon",                    IDC_SHAPE_CREATE_DECAGON
+            END
+            POPUP "&Zonohedra"
+            BEGIN
+                MENUITEM "&Escher's solid",             ID_CREATE_ESCHER
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "G&lobal preferences...",      IDC_GLOBAL_PREFERENCES
+        MENUITEM "Global dictionary...",        IDC_GLOBAL_DICTIONARY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP
+        MENUITEM "Help &Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About PaperCut...",          ID_APP_ABOUT
+    END
+END
+
+IDR_PAPERCTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save as &definition...",      ID_FILE_SAVE_DEFINITION
+        MENUITEM SEPARATOR
+        POPUP "&Import"
+        BEGIN
+            MENUITEM "&OFF",                        ID_IMPORT_OFF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "C&lip/Edit...\tCtrl+E",       ID_EDIT_CLIP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Layout summary",             IDC_VIEW_LAYOUT_SUMMARY
+        MENUITEM SEPARATOR
+        MENUITEM "N&ext face group\tRgtArrow",  IDC_VIEW_NEXT_FACEGROUP
+        MENUITEM "P&rev face group\tLftArrow",  IDC_VIEW_PREV_FACE_GROUP
+        MENUITEM "&Next page\tPgDn",            IDC_VIEW_NEXT_PAGE
+        MENUITEM "&Prev page\tPgUp",            IDC_VIEW_PREV_PAGE
+    END
+    POPUP "&Shape"
+    BEGIN
+        POPUP "&Create"
+        BEGIN
+            MENUITEM "&Tetrahedron",                IDC_SHAPE_CREATE_TETRA
+            MENUITEM "&Cube",                       ID_CREATE_CUBE
+            MENUITEM "&Hexahedron",                 IDC_SHAPE_CREATE_HEX
+            MENUITEM "&Octahedron",                 IDC_SHAPE_CREATE_OCTA
+            MENUITEM "&Dodecahedron",               IDC_SHAPE_CREATE_DODECA
+            MENUITEM "&Icosahedron",                IDC_SHAPE_CREATE_ICOSA
+            MENUITEM SEPARATOR
+            POPUP "&Archimedean"
+            BEGIN
+                MENUITEM "&Cuboctahedron\tA1",          ID_ARCHIMEDEAN_CUBOCTAHEDRON
+                MENUITEM "&Truncated octahedron\tA12",  ID_ARCHIMEDEAN_TRUNCATEDOCTAHEDRON
+                MENUITEM "&Buckyball (Truncated icosahedron)\tA11", ID_ARCHIMEDEAN_BUCKYBALL
+                MENUITEM "&Snub cube\tA7",              ID_ARCHIMEDEAN_SNUBCUBE
+            END
+            POPUP "Co&mpounds"
+            BEGIN
+                MENUITEM "&Kepler's Stella Octangula",  ID_CREATE_KEPLER
+                MENUITEM "&Cube-Octahedron compound",   ID_COMPOUNDS_CUBE_OCTAHEDRON
+                MENUITEM "&Icosahedron-Dodecahedron compound", ID_COMPOUNDS_ICOSA_DODECA
+            END
+            POPUP "&Polygon"
+            BEGIN
+                MENUITEM "&Triangle",                   IDC_SHAPE_CREATE_TRIANGLE
+                MENUITEM "&Square",                     IDC_SHAPE_CREATE_SQUARE
+                MENUITEM "&Pentagon",                   IDC_SHAPE_CREATE_PENTAGON
+                MENUITEM "&Hexagon",                    IDC_SHAPE_CREATE_HEXAGON
+                MENUITEM "&Octagon",                    IDC_SHAPE_CREATE_OCTAGON
+                MENUITEM "&Decagon",                    IDC_SHAPE_CREATE_DECAGON
+            END
+            POPUP "&Zonohedra"
+            BEGIN
+                MENUITEM "&Escher's solid",             ID_CREATE_ESCHER
+            END
+        END
+        MENUITEM "C&lip/Edit...\tCtrl+E",       ID_EDIT_CLIP
+        MENUITEM SEPARATOR
+        POPUP "&Stellate"
+        BEGIN
+            MENUITEM "&200%",                       IDC_STELLATE_200
+            MENUITEM "1&50%",                       IDC_STELLATE_150
+            MENUITEM "122%",                        IDC_STELLATE_125
+            MENUITEM "&100%",                       IDC_STELLATE_100
+            MENUITEM "&75%",                        IDC_STELLATE_75
+            MENUITEM "&60%",                        IDC_STELLATE_60
+            MENUITEM "&Other...",                   IDC_STELLATE_OTHER
+            MENUITEM "&Geodesic fractal...",        IDC_GEOFRACTAL_STELLATE
+            MENUITEM "&Flat fractal...",            IDC_FRACTAL_STELLATE
+        END
+        POPUP "&K-stellate"
+        BEGIN
+            MENUITEM "&200%",                       IDC_KSTELLATE_200
+            MENUITEM "&100%",                       IDC_KSTELLATE_100
+            MENUITEM "&60%",                        IDC_KSTELLATE_60
+            MENUITEM "&Other...",                   IDC_KSTELLATE_OTHER
+        END
+        POPUP "&Geodesic"
+        BEGIN
+            MENUITEM "&2v breakdown",               IDC_SHAPE_GEO2X
+            MENUITEM "&3v breakdown",               IDC_SHAPE_GEO3X
+            MENUITEM "&4v breakdown",               IDC_SHAPE_GEO4X
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Preferences...",             IDC_PREFERENCES
+        MENUITEM "&Dictionary...",              IDC_SHAPE_DICTIONARY
+        MENUITEM "&Media manager...",           ID_SHAPE_MEDIAMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "G&lobal preferences...",      IDC_GLOBAL_PREFERENCES
+        MENUITEM "Global dictionary...",        IDC_GLOBAL_DICTIONARY
+    END
+    POPUP "&Layout"
+    BEGIN
+        MENUITEM "&Split divisions...",         IDC_LAYOUT_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "Defaul&t",                    IDC_LAYOUT_DEFAULT, CHECKED
+        MENUITEM "User &1",                     IDC_LAYOUT_USER1, INACTIVE
+        MENUITEM "User &2",                     32849, INACTIVE
+        MENUITEM "User &3",                     32850, INACTIVE
+        MENUITEM "User &4",                     32851, INACTIVE
+        MENUITEM "User &5",                     32852, INACTIVE
+        MENUITEM "User &6",                     32853, INACTIVE
+        MENUITEM "User &7",                     32854, INACTIVE
+        MENUITEM "User &8",                     32855, INACTIVE
+        MENUITEM "User &9",                     32856, INACTIVE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP
+        MENUITEM "Help &Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About PaperCut...",          ID_APP_ABOUT
+    END
+END
+
+IDR_RIGHTCLICK MENU 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Show &face name",             IDC_SHOW_FACE
+        MENUITEM "Set f&ace text...",           IDC_SET_FACETEXT
+        MENUITEM "Set face &image...",          IDC_SET_FACEIMAGE
+        MENUITEM "Set image &caption...",       ID_MENU_SETIMAGECAPTION, GRAYED
+        MENUITEM "&Remove image",               IDC_CLEAR_IMAGE, GRAYED
+        MENUITEM "R&emove face",                IDC_REMOVE_FACE
+        POPUP "Remove group", GRAYED
+        BEGIN
+            MENUITEM "Group 1",                     IDC_REMOVE_GROUP1, GRAYED
+            MENUITEM "Group 2",                     IDC_REMOVE_GROUP2, GRAYED
+            MENUITEM "Group 3",                     IDC_REMOVE_GROUP3, GRAYED
+        END
+        MENUITEM "&Stellate face...",           IDC_STELLATE_FACE
+        POPUP "Add &polygon"
+        BEGIN
+            MENUITEM "&Triangle",                   IDC_ADD_TRIANGLE
+            MENUITEM "&Square",                     IDC_ADD_SQUARE
+            MENUITEM "&Pentagon",                   IDC_ADD_PENTAGON
+            MENUITEM "&Hexagon",                    IDC_ADD_HEXAGON
+            MENUITEM "&Octagon",                    IDC_ADD_OCTAGON
+            MENUITEM "&Decagon",                    IDC_ADD_DECAGON
+        END
+        MENUITEM "Set &base edge",              IDC_SET_BASE_EDGE
+        MENUITEM "&Detach edge",                IDC_DETACH_EDGE
+        POPUP "&Join edge"
+        BEGIN
+            MENUITEM "< n/a >",                     36001
+        END
+        MENUITEM "&Indent/outdent face...",     IDC_OUTDENT_FACE
+        MENUITEM "F&orce split",                37014, INACTIVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       IDC_VIEW_NEXT_FACEGROUP, VIRTKEY, NOINVERT
+    VK_NEXT,        IDC_VIEW_NEXT_PAGE,     VIRTKEY, NOINVERT
+    VK_LEFT,        IDC_VIEW_PREV_FACE_GROUP, VIRTKEY, NOINVERT
+    VK_PRIOR,       IDC_VIEW_PREV_PAGE,     VIRTKEY, NOINVERT
+    "E",            ID_EDIT_CLIP,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 228, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PaperCut"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "PaperCut",IDC_STATIC,36,13,39,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002-2006 Henry Groover\nFreeware\nUses paintlib (http://www.paintlib.de)\nPlease recycle.  Be sensible with everything.  We're borrowing this earth from our children.\n\nComments, suggestions? email papercut@henrygroover.com",IDC_STATIC,7,27,136,75
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14,WS_GROUP
+    CONTROL         133,IDC_MY_PICTURE,"Static",SS_BITMAP,148,22,73,67
+    LTEXT           "",IDC_VERSIONBOX,7,105,214,59,SS_SUNKEN
+END
+
+IDD_DOCKABLE_VIEWCONTROL DIALOGEX 0, 0, 449, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_PAGEASPECT,4,1,81,123,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Landscape",IDC_LANDSCAPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,87,2,51,9
+    LTEXT           "Size:",IDC_STATIC,143,1,17,8
+    CONTROL         "Slider1",IDC_SIZERATIO,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,159,3,97,10
+    CONTROL         "&Dbg",IDC_DBG_ON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,359,1,26,10
+    EDITTEXT        IDC_SIZETEXT,257,1,34,12,ES_AUTOHSCROLL
+END
+
+IDD_ASKSHAPE_EXTENSION DIALOG  0, 0, 151, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Use PaperCut to open .shp files?"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",IDOK,7,61,50,14
+    PUSHBUTTON      "&No",IDCANCEL,85,61,50,14
+    LTEXT           "PaperCut is not currently associated with .shp files.\n\nDo you want to make PaperCut the default program for opening .shp files?",IDC_STATIC,7,7,112,54
+    CONTROL         "Always perform this check at startup",IDC_ALWAYSCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,78,129,10
+END
+
+IDD_LAYOUT_SUMMARY DIALOG  0, 0, 314, 218
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Layout summary"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,119,197,50,14
+    EDITTEXT        IDC_SUMMARYTEXT,7,29,300,164,ES_MULTILINE | ES_READONLY | WS_VSCROLL | WS_GROUP
+    CONTROL         "By &face name",IDC_BYFACE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,14,59,10
+    CONTROL         "By &page",IDC_BYPAGE,"Button",BS_AUTORADIOBUTTON,93,14,42,10
+    CONTROL         "By &tab text",IDC_BYTAB,"Button",BS_AUTORADIOBUTTON,154,14,49,10
+END
+
+IDD_EDIT_FACE DIALOG  0, 0, 300, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit face text"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Edit text:",IDC_STATIC,7,7,94,8
+    EDITTEXT        IDC_FACETEXT,7,23,220,124,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,243,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,243,24,50,14
+    LTEXT           "^ character is used to represent line breaks.  Line breaks will automatically be converted to ^",IDC_STATIC,230,46,63,101
+END
+
+IDD_SELECT_STELLATION DIALOGEX 0, 0, 280, 179
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select stellation ratio"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,223,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,223,24,50,14
+    COMBOBOX        IDC_STELLATION_PERCENTAGE,145,7,71,143,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select or enter a percentage:",IDC_STATIC,7,7,137,14
+    LTEXT           "",IDC_STELLATE_HELPBOX,133,54,140,118,SS_SUNKEN
+    CONTROL         144,IDC_STELLATE_EXAMPLE,"Static",SS_BITMAP,7,55,120,117
+    LTEXT           "Percentage is used to derive pyramid height h from the longest base edge (max(be)) over the longest vertical edge of the new pyramid (max(ve)), times 100",IDC_STATIC,7,18,131,35
+END
+
+IDD_PREFTABS_DRAWING DIALOGEX 0, 0, 245, 220
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "&Drawing"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Default face text:",IDC_T1_LBL_DEFAULTFACE,11,12,56,9
+    EDITTEXT        IDC_T1_DEFAULT_FACE,79,10,126,12,ES_AUTOHSCROLL
+    LTEXT           "Text font:",IDC_STATIC,13,24,56,11
+    CONTROL         "",IDC_TEXT_FONT,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,79,24,127,15
+    GROUPBOX        "P&ictures",IDC_T1_GRP_PICTURES,23,36,198,105
+    CONTROL         "scale by",IDC_T1_SCALEBYAREA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,35,48,42,9
+    CONTROL         "scale by",IDC_T1_SCALEBYHEIGHT,"Button",BS_AUTORADIOBUTTON,35,64,42,9
+    CONTROL         "scale by",IDC_T1_SCALEBYBASE,"Button",BS_AUTORADIOBUTTON,35,80,42,9
+    CONTROL         "scale by",IDC_T1_SCALEBYORIGINAL,"Button",BS_AUTORADIOBUTTON,35,96,42,9
+    CONTROL         "no scaling",IDC_T1_NOSCALE,"Button",BS_AUTORADIOBUTTON,35,109,133,10
+    EDITTEXT        IDC_T1_TXT_SCALEBYAREA,81,46,40,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "% of face area",IDC_T1_LBL_SCALEBYAREA,122,48,82,9
+    EDITTEXT        IDC_T1_TXT_SCALEBYHEIGHT,81,62,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "% of face height",IDC_T1_LBL_SCALEBYHEIGHT,122,64,82,9,WS_DISABLED
+    EDITTEXT        IDC_T1_TXT_SCALEBYBASE,81,78,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "% of face base",IDC_T1_LBL_SCALEBYBASE,122,80,82,9,WS_DISABLED
+    EDITTEXT        IDC_T1_TXT_SCALEBYORIGINAL,81,94,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "% of original picture size",IDC_T1_LBL_SCALEBYORIGINAL,122,96,82,9,WS_DISABLED
+    CONTROL         "flow to adjoining faces",IDC_FLOW_ADJOINING,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,35,121,132,10
+    GROUPBOX        "       &Colors (click in color boxes to modify)      ",IDC_STATIC,24,144,198,64
+    LTEXT           "Edge",IDC_STATIC,29,154,18,8
+    CONTROL         "",IDC_COLOR_EDGE,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,28,163,17,15
+    LTEXT           "Inwd edge",IDC_STATIC,61,154,34,8
+    CONTROL         "",IDC_COLOR_INWDEDGE,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,62,163,17,15
+    LTEXT           "Tab edge",IDC_STATIC,97,154,32,8
+    CONTROL         "",IDC_COLOR_TABEDGE,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,98,163,17,15
+    LTEXT           "Text",IDC_STATIC,29,181,15,8
+    CONTROL         "",IDC_COLOR_FACE,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,29,189,17,15
+    LTEXT           "Bkgrnd",IDC_STATIC,60,181,24,8
+    CONTROL         "",IDC_COLOR_BGFACE,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,61,189,17,15
+    LTEXT           "Tab bgnd",IDC_STATIC,97,181,32,8
+    CONTROL         "",IDC_COLOR_BGTAB,"Static",SS_BITMAP | SS_NOTIFY | SS_SUNKEN | WS_BORDER,98,189,17,15
+    CONTROL         "enable image rotation (may cause problems printing)",IDC_ENABLE_ROTATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,131,178,10
+END
+
+IDD_PREFTABS_LAYOUT DIALOGEX 0, 0, 210, 131
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "&Layout"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Minimum &join angle:",IDC_STATIC,7,13,62,8
+    EDITTEXT        IDC_MINJOINANGLE,78,11,40,12,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,122,13,26,8
+    LTEXT           "&Tab shoulder angle:",IDC_STATIC,7,30,67,8
+    EDITTEXT        IDC_TABSHOULDERANGLE,78,28,40,12,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,122,30,26,8
+    CONTROL         "&No tabs",IDC_TAB_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,57,84,14
+    GROUPBOX        "Tabs",IDC_TABUSAGE_GRP,7,46,169,69
+    CONTROL         "&Blank",IDC_TAB_BLANK,"Button",BS_AUTORADIOBUTTON,15,70,69,13
+    CONTROL         "No &hint",IDC_TAB_NOHINT,"Button",BS_AUTORADIOBUTTON,15,82,69,13
+    CONTROL         "&Full",IDC_TAB_FULL,"Button",BS_AUTORADIOBUTTON,15,93,69,13
+END
+
+IDD_EDIT_DICTIONARY DIALOGEX 0, 0, 259, 209
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Edit shape dictionary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,202,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,24,50,14
+    LISTBOX         IDC_DICTENTRIES,7,56,148,49,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dictionary entries\n\nClick on the entry to edit, or add a new entry below. Edit box is at the bottom. Dictionary entries are available for $varname$ substitution:",IDC_STATIC,7,7,154,49
+    EDITTEXT        IDC_NEW_ENTRY,48,110,66,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add new",IDC_ADD_NEW,117,108,39,14,WS_DISABLED
+    LTEXT           "New entry:",IDC_STATIC,7,111,39,11
+    EDITTEXT        IDC_EDIT_VALUE,7,149,245,53,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL
+    LISTBOX         IDC_PREDEFINED,192,55,60,51,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Predefined:",IDC_STATIC,193,44,48,9
+    EDITTEXT        IDC_PREDEFINED_TEXT,190,113,62,28,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&Delete...",IDC_DELETE,97,129,60,13,WS_DISABLED
+END
+
+IDD_CLIP_DELETE DIALOGEX 0, 0, 217, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Clip and delete faces"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,160,188,50,14
+    CONTROL         "",IDC_FACE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,7,45,147,131
+    LTEXT           "Faces and face groups in $__shape__$. Select the face group you want to keep and click Clip, or select the group you want to delete and click Delete.",IDC_INTRO,7,7,142,32
+    PUSHBUTTON      "&Clip (keep selected)",IDC_SHAPE_CLIP,156,44,54,19,BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "&Delete selected",IDC_SHAPE_DELETE,157,70,53,20,BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,160,217,50,14
+    PUSHBUTTON      "&Reset",IDC_RESET_SELECT,158,98,52,17,WS_DISABLED
+    LTEXT           "",IDC_GROUP_LIST,7,182,145,49,SS_SUNKEN
+END
+
+IDD_MEDIA_MANAGER DIALOGEX 0, 0, 304, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Media Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,247,166,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,247,183,50,14
+    LTEXT           "Content used in this shape:",IDC_STATIC,7,7,156,12
+    LISTBOX         IDC_MEDIA_LIST,7,23,290,135,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "No media for this shape",IDC_MEDIALIST_NOTES,7,162,157,35
+    PUSHBUTTON      "&Copy...",IDC_COPY_CONTENT,237,7,60,15
+END
+
+IDD_GET_DESTINATION_DIR DIALOGEX 0, 0, 267, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter destination directory"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,66,50,14
+    LTEXT           "Enter destination directory:",IDC_PROMPT,7,7,141,11
+    EDITTEXT        IDC_DESTINATION_DIR,7,18,231,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_DIR,240,18,20,13
+    CONTROL         "&Overwrite existing file in destination directory",IDC_OVERWRITE_EXISTING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,36,214,12
+END
+
+IDD_LAYOUT_SPLIT DIALOGEX 0, 0, 217, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Layout split"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Done",IDOK,160,188,50,14
+    CONTROL         "",IDC_FACE_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_LINESATROOT | TVS_EDITLABELS | TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,7,45,147,131
+    LTEXT           "Layout splitting for $__shape__$\r\nClick New to add a new layout division.\nClick Set destination to make another layout division the target of moves. Highlight node(s) to move and click Move.",IDC_INTRO,7,7,203,32
+    PUSHBUTTON      "Cancel",IDCANCEL,160,217,50,14
+    LTEXT           "",IDC_GROUP_LIST,7,182,145,49,SS_SUNKEN
+    PUSHBUTTON      "&New division",IDC_NEW_DIVISION,164,47,46,17
+    PUSHBUTTON      "Set &dest",IDC_SET_DESTINATION,166,72,44,16,WS_DISABLED
+    PUSHBUTTON      "&Move",IDC_MOVE_NODE,166,98,44,17,WS_DISABLED
+END
+
+IDD_GET_INDENT DIALOGEX 0, 0, 186, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Get indent / outdent proportions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Proportion for sides of indented figure",IDC_STATIC,7,7,107,19
+    EDITTEXT        IDC_SIDE_PROPORTION,40,24,53,13,ES_AUTOHSCROLL
+    LTEXT           "Proportion for height of outdent / indent. Use positive values for outdent, negative for indent.",IDC_STATIC,7,53,158,17
+    EDITTEXT        IDC_HEIGHT_PROPORTION,41,71,52,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_GENERIC_SUMMARY DIALOGEX 0, 0, 371, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Summary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,186,50,14
+    LTEXT           "Title",IDC_SUMMARY_TITLE,7,7,357,26
+    EDITTEXT        IDC_SUMMARY_TEXT,7,39,357,139,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDD_INPUT_SCALE DIALOGEX 0, 0, 198, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Confirm scale"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,141,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,24,50,14
+    LTEXT           "Object scale is out of normal range.\r\nEnter scale factor used to convert object, or Cancel to leave as-is:",IDC_STATIC,7,7,127,26
+    EDITTEXT        IDC_SCALE_TEXT,7,41,122,16,ES_AUTOHSCROLL
+END
+
+IDD_DLGINPUTSCALE DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,300
+ PRODUCTVERSION 1,0,0,300
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "http://paper-model.com"
+            VALUE "CompanyName", "Henry Groover"
+            VALUE "FileDescription", "PaperCut paper modeling"
+            VALUE "FileVersion", "1, 0, 0, 300"
+            VALUE "InternalName", "PaperCut"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2006 Henry A. Groover.  Distributed under Open Source License."
+            VALUE "OriginalFilename", "PaperCut.EXE"
+            VALUE "PrivateBuild", "Raj Baldev"
+            VALUE "ProductName", "PaperCut Application"
+            VALUE "ProductVersion", "1, 0, 0, 300"
+            VALUE "SpecialBuild", "build 300 ""Raj Baldev"""
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_DOCKABLE_VIEWCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 13
+    END
+
+    IDD_ASKSHAPE_EXTENSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_LAYOUT_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_EDIT_FACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_SELECT_STELLATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_PREFTABS_DRAWING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_PREFTABS_LAYOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_EDIT_DICTIONARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_CLIP_DELETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_MEDIA_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_GET_DESTINATION_DIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_LAYOUT_SPLIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_GET_INDENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_GENERIC_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_INPUT_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DLGINPUTSCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DOCKABLE_VIEWCONTROL DLGINIT
+BEGIN
+    IDC_PAGEASPECT, 0x403, 31, 0
+0x2e30, 0x3637, 0x2032, 0x3828, 0x352e, 0x3158, 0x2c31, 0x6d20, 0x7261, 
+0x6967, 0x736e, 0x3020, 0x322e, 0x6935, 0x296e, "\000" 
+    IDC_PAGEASPECT, 0x403, 14, 0
+0x2e30, 0x3336, 0x2036, 0x3128, 0x5831, 0x3731, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 35, 0
+0x2e30, 0x3936, 0x2034, 0x4128, 0x2c34, 0x3220, 0x3031, 0x3258, 0x3739, 
+0x202c, 0x616d, 0x6772, 0x6e69, 0x2073, 0x2e36, 0x6d35, 0x296d, "\000" 
+    IDC_PAGEASPECT, 0x403, 20, 0
+0x2e30, 0x3936, 0x2038, 0x4128, 0x2c33, 0x3220, 0x3739, 0x3458, 0x3032, 
+0x0029, 
+    IDC_PAGEASPECT, 0x403, 20, 0
+0x2e30, 0x3037, 0x2031, 0x4128, 0x2c32, 0x3420, 0x3032, 0x3558, 0x3439, 
+0x0029, 
+    IDC_PAGEASPECT, 0x403, 20, 0
+0x2e30, 0x3037, 0x2032, 0x4128, 0x2c31, 0x3520, 0x3439, 0x3858, 0x3134, 
+0x0029, 
+    IDC_PAGEASPECT, 0x403, 21, 0
+0x2e30, 0x3037, 0x2034, 0x4128, 0x2c30, 0x3820, 0x3134, 0x3158, 0x3831, 
+0x2939, "\000" 
+    IDC_PAGEASPECT, 0x403, 26, 0
+0x2e30, 0x3037, 0x2035, 0x4928, 0x4f53, 0x4220, 0x2c30, 0x3120, 0x3030, 
+0x5830, 0x3431, 0x3431, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 24, 0
+0x2e30, 0x3637, 0x2033, 0x4128, 0x534e, 0x2049, 0x2c41, 0x3220, 0x3631, 
+0x3258, 0x3937, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 24, 0
+0x2e30, 0x3336, 0x2035, 0x4128, 0x534e, 0x2049, 0x2c42, 0x3220, 0x3937, 
+0x3458, 0x3233, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 24, 0
+0x2e30, 0x3637, 0x2037, 0x4128, 0x534e, 0x2049, 0x2c43, 0x3420, 0x3233, 
+0x3558, 0x3935, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 24, 0
+0x2e30, 0x3436, 0x2032, 0x4128, 0x534e, 0x2049, 0x2c44, 0x3520, 0x3935, 
+0x3858, 0x3436, 0x0029, 
+    IDC_PAGEASPECT, 0x403, 25, 0
+0x2e30, 0x3737, 0x2030, 0x4128, 0x534e, 0x2049, 0x2c45, 0x3820, 0x3436, 
+0x3158, 0x3131, 0x2938, "\000" 
+    0
+END
+
+IDD_SELECT_STELLATION DLGINIT
+BEGIN
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3035, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3034, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3333, 0x2533, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3532, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3232, 0x2535, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3032, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3731, 0x2535, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3531, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3231, 0x2532, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    IDC_STELLATION_PERCENTAGE, 0x403, 4, 0
+0x3537, 0x0025, 
+    IDC_STELLATION_PERCENTAGE, 0x403, 4, 0
+0x3636, 0x0025, 
+    IDC_STELLATION_PERCENTAGE, 0x403, 4, 0
+0x3036, 0x0025, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_WAIT         CURSOR                  "res\\cursor_w.cur"
+IDC_CURSOR_PICTURE      CURSOR                  "res\\cursor_p.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "PaperCut Paper Modeling"
+    IDR_PAPERCTYPE          "\nShape\nShape\nPapercut Shapes (*.shp)\n.shp\nPaperCut.Document\nShape Definition"
+    IDR_PAPERCUT_TYPERESOURCE 
+                            "\nPaperC\nPaperC\n\n\nPaperCut.Document\nPaperC Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PaperCut"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SHAPE_CREATE_TETRA  "4-sided regular polyhedron"
+    IDC_SHAPE_CREATE_ICOSA  "20-sided regular polyhedron"
+    IDC_SHAPE_CREATE_HEX    "6-sided polyhedron composed of two tetrahedra joined together"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_STELLATE_100        "Pop out each face into a pyramid with longest vertical edge 100% the length of the longest base edge\nStellate faces 100%"
+    IDC_STELLATE_75         "Pop out each face into a pyramid with longest vertical edge 75% the length of the longest base edge\nStellate faces 75%"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_STELLATE_33         "Pop out each face into a pyramid with height 33% the length of the longest epicenter to vertex distance\nStellate faces 33%"
+    IDC_STELLATE_25         "Pop out each face into a pyramid with height 25% the length of the longest epicenter to vertex distance\nStellate faces 25%"
+    IDC_STELLATE_50         "Pop out each face into a pyramid with longest vertical edge 50% the length of the longest base edge\nStellate faces 50%"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SHAPE_GEO2X         "Expand each triangular face into 4\n2v (2-frequency) - break each face into 4"
+    IDC_SHAPE_GEO3X         "Expand each triangular face into 9\n3v (3-frequency) - break each face into 9"
+    IDC_SHAPE_GEO4X         "Expand each triangular face into 16"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SHAPE_CREATE_OCTA   "8-sided regular polyhedron"
+    IDC_SHAPE_CREATE_DODECA "12-sided regular polyhedron, each face of which is a hexagon"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_VIEW_LAYOUT_SUMMARY "View a summary of details on this layout, including a page index"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_STELLATE_125        "Pop out each face into a pyramid with longest vertical edge 122% the length of the longest base edge\nStellate faces 122%"
+    IDC_STELLATE_150        "Pop out each face into a pyramid with longest vertical edge 150% the length of the longest base edge\nStellate faces 150%"
+    IDC_STELLATE_200        "Pop out each face into a pyramid with longest vertical edge 200% the length of the longest base edge\nStellate faces 200%"
+    IDC_STELLATE_15         "Pop out each face into a pyramid with height 15% the length of the longest epicenter to vertex distance\nStellate faces 15%"
+    IDC_STELLATE_10         "Pop out each face into a pyramid with height 10% the length of the longest epicenter to vertex distance\nStellate faces 10%"
+    IDC_STELLATE_OTHER      "Pop out each face into a pyramid with custom ratio\nStellate faces - custom ratio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SIZERATIO           "Set size ratio\nSet size"
+    IDC_STELLATE_HELPBOX    "Stellation breaks each face out into a pyramid with the base formed by the original face.  The stellation percentage determines how high each pyramid will be, and is based on the ratio between the longest vertical edge and the longest original face edge. The minimum value for an equilateral triangle is 57.755%, or tan 30.  At 100%, each edge of the new pyramid will be equal to the base edges (assuming the original face was equilateral).  At 60% the height will be negligible.  At 122% the height will be equal to an equilateral base edge."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_PREFERENCES         "Set shape preferences\nView and set preferences for this shape"
+    IDC_GLOBAL_PREFERENCES  "Set default preferences for all shapes"
+    IDC_VIEW_NEXT_FACEGROUP "Display the next face group"
+    IDC_VIEW_PREV_FACE_GROUP "Display the previous face group"
+    IDC_VIEW_NEXT_PAGE      "Display the next page"
+    IDC_VIEW_PREV_PAGE      "Display the previous page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_GEOFRACTAL_STELLATE "2v geodesic fractal\nExpands icosahedron into 2v geodesic then converts middle into base of tetrahedron"
+    IDC_FRACTAL_STELLATE    "Flat fractal stellation\nInscribe an inverted triangle connecting midpoints of each face and make it the base of a pyramid"
+    IDC_STELLATE_FACE       "Stellate only this face\nStellate only the selected face"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_COLOR_EDGE          "Edge color for normal edges (folding outward)"
+    IDC_COLOR_FACE          "Color to use for text on faces"
+    IDC_COLOR_TABEDGE       "Edge color for tabs"
+    IDC_COLOR_BGFACE        "Background color for faces"
+    IDC_COLOR_BGTAB         "Background color for tabs"
+    IDC_COLOR_INWDEDGE      "Edge color for faces which fold inward"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SHAPE_DICTIONARY    "Edit shape dictionary\nView and edit dictionary for variable substitution for this shape"
+    IDC_GLOBAL_DICTIONARY   "Edit global dictionary\nEdit global dictionary to be used for all shapes"
+    IDC_KSTELLATE_FACE      "K-stellate this face\nK-stellate only the selected face"
+    IDC_KSTELLATE_25        "K-stellate 25%\nK-stellate shape 25%"
+    IDC_KSTELLATE_OTHER     "User-defined k-stellation\nSpecify custom stellation for k-stellation"
+    IDC_KSTELLATE_100       "K-stellate 100%\nK-stellate a tetrahedron 100% to create Kepler's Stella Octangula"
+    IDC_KSTELLATE_200       "K-stellate 200%\nK-stellate shape 200%"
+    IDC_KSTELLATE_50        "K-stellate 50%"
+    IDC_STELLATE_60         "Pop out each face into a pyramid with longest vertical edge 60% the length of the longest base edge\nStellate faces 60%"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CREATE_KEPLER        "Kepler's Stella Octangula\nCreate Kepler's Stella Octangula, two tetrahedra joined together"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_KSTELLATE_60        "K-stellate 60%\nK-stellate shape 60%"
+    ID_SHAPE_MEDIAMANAGER   "Manage content\nManage content - copy files, etc."
+    ID_MENU_SETIMAGECAPTION "Set image caption\nEnter caption for t his image"
+    IDC_SET_BASE_EDGE       "Make this the base edge of this face"
+    IDC_LAYOUT_SPLIT        "Split and merge layout divisions\nLayout divisions allow faces to be printed separately."
+    IDC_LAYOUT_DEFAULT      "Select default layout division"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CREATE_CUBE          "Create a cube. The ideal shape for photos."
+    ID_ARCHIMEDEAN_CUBOCTAHEDRON 
+                            "14 faces consisting of 6 squares and 8 equilateral triangles"
+    ID_ARCHIMEDEAN_BUCKYBALL 
+                            "Create a Buckyball\nBuckyball is also known as a soccer ball or truncated icosahedron"
+    ID_ARCHIMEDEAN_SNUBCUBE "Create a snub cube\nSnub cube or laevo has 38 faces, consisting of squares and trinangles"
+    ID_ARCHIMEDEAN_TRUNCATEDOCTAHEDRON 
+                            "14 faces, consisting of 8 regular hexagons and 6 squares"
+    ID_COMPOUND_CUBE_OCTAHEDRON "Compound of a cube and octahedron"
+    ID_COMPOUNDS_CUBE_OCTAHEDRON "Compound of a cube and octahedron"
+    ID_COMPOUNDS_ICOSA_DODECA "Icosahedron-dodecahedron compound"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ARCHIMEDEAN_TRUNCATEDTETRAHEDRON 
+                            "8 faces consisting of 4 hexagons and 4 triangles"
+    IDC_SHAPE_CREATE_TRIANGLE "Create shape consisting of a single triangle"
+    IDC_SHAPE_CREATE_SQUARE "Create shape consisting of a single square"
+    IDC_SHAPE_CREATE_PENTAGON "Create shape consisting of a single pentagon"
+    IDC_SHAPE_CREATE_HEXAGON "Create shape consisting of a single hexagon"
+    IDC_SHAPE_CREATE_OCTAGON "Create a shape consisting of a single octagon"
+    IDC_SHAPE_CREATE_DECAGON "Create a shape consisting of a single decagon"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_ADD_TRIANGLE        "Add triangle of unit length"
+    IDC_ADD_SQUARE          "Add square with sides of unit length"
+    IDC_ADD_PENTAGON        "Add pentagon with sides of unit length"
+    IDC_ADD_HEXAGON         "Add hexagon with sides of unit length"
+    IDC_ADD_OCTAGON         "Add octagon with sides of unit length"
+    IDC_ADD_DECAGON         "Add a decagon with sides of equal length"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE_DEFINITION "Save shape in format suitable for inclusion in papercut.shapedef"
+    IDC_DETACH_EDGE         "Detach edge from joined face"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CREATE_ESCHER        "Create Escher's Solid, as seen on the right-hand pedestal in Waterfall"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMPORT_OFF           "OFF is a standard format for 3d shapes. OFF files can be exported from Blender, 3dStudio, and other wireframe modelling programs."
+    IDC_OUTDENT_FACE        "Indent or outdent a quadrangular face"
+    IDC_EDGE_FORCE_SPLIT    "Force edge to split from connected\nForce edge split"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PaperCut.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

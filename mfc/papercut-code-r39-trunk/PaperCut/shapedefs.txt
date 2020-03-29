@@ -1,0 +1,117 @@
+# $Id$
+# Shape definitions file read at startup - DO NOT USE - use papercut.shapedef
+# Menu items are added under Shape / Create
+shapedef Truncated Tetrahedron
+{
+  menu 
+  {
+    &Archimedean
+    Tr&uncated tetrahedron\t(A13)
+  }
+  altnames
+  {
+  }
+  # read facetypes into EDGEDEFDICT
+	#	const char *aszEdgeNames[] = { "a", "b", "c", "d", "e", "f" };
+	#	double adEdgeLengths1[] = { 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 };
+	#	EDGEDEF aHEdges = { 6, aszEdgeNames, adEdgeLengths1 };
+	#	EDGEDEF aTEdges = { 3, aszEdgeNames, adEdgeLengths1 };
+	#	EDGEDEFDICT dictDefs;
+	#	dictDefs.SetAt( "H", &aHEdges );
+	#	dictDefs.SetAt( "T", &aTEdges );
+  facetypes
+  {
+	 H
+	 {
+		a,1.0
+		b,1.0
+		c,1.0
+		d,1.0
+		e,1.0
+		f,1.0
+	 }
+	 T
+	 {
+		a,1.0
+		b,1.0
+		c,1.0
+	 }
+  }
+  # Read into FACEDEF array
+	#	FACEDEF aFaces[] = {
+	#		{ "H", "HA", "c", 90.0 },
+	#		{ "H", "HB", "d", 90.0 },
+	#		{ "H", "HC", "c", 90.0 },
+	#		{ "H", "HD", "c", 90.0 },
+	#		{ "T", "TA", "c", 90.0 },
+	#		{ "T", "TB", "b", 90.0 },
+	#		{ "T", "TC", "b", 90.0 },
+	#		{ "T", "TD", "a", 90.0 },
+	#		{ NULL, NULL }
+	#	};
+  faces
+  {
+	H,HA,c,90.0
+	H,HB,d,90.0
+	H,HC,c,90.0
+	H,HD,c,90.0
+	T,TA,c,90.0
+	T,TB,b,90.0
+	T,TC,b,90.0
+	T,TD,a,90.0
+  }
+  # Read into LPCTSTR array
+	#	LPCTSTR aszJoins[] = {
+	#		// Go strictly in lexical order, which means HA < HB < ... HD < TA < TB ... < TD
+	#		"HA:a-HC:a",
+	#		"HA:b-TB:c",
+	#		"HA:c-HB:f",
+	#		"HA:d-TA:a",
+	#		"HA:e-HD:b"
+	#		"HA:f-TD:a",
+	#		"HB:a-TB:b",
+	#		"HB:b-HC:b",
+	#		"HB:c-TC:c",
+	#		"HB:d-HD:d",
+	#		"HB:e-TA:b",
+	#		"HC:b-TD:c",
+	#		"HC:c-HD:f",
+	#		"HC:d-TC:a",
+	#		"HC:f-TB:a",
+	#		"HD:a-TD:b",
+	#		"HD:c-TA:c",
+	#		"HD:e-TC:b",
+	#		NULL
+	#	};
+  joins
+  {
+	HA:a-HC:a
+	HA:b-TB:c
+	HA:c-HB:f
+	HA:d-TA:a
+	HA:e-HD:b
+	HA:f-TD:a
+
+	HB:a-TB:b
+	HB:b-HC:b
+	HB:c-TC:c
+	HB:d-HD:d
+	HB:e-TA:b
+
+	HC:b-TD:c
+	HC:c-HD:f
+	HC:d-TC:a
+	HC:f-TB:a
+
+	HD:a-TD:b
+	HD:c-TA:c
+	HD:e-TC:b
+  }
+  # Use to invoke CreateShapePrimitive( pszShapeName, dictDefs, aFaces, aszJoins );
+  # Currently not implemented - placeholder for transformations, layout changes, etc.
+  postcreate
+  {
+  }
+}
+	
+  

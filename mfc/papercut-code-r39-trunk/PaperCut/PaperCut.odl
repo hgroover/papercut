@@ -1,0 +1,43 @@
+// $Id$
+// PaperCut.odl : type library source for PaperCut.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (PaperCut.tlb).
+
+[ uuid(9837ABA4-3851-11D6-A858-0040F4309CCE), version(1.0) ]
+library PaperCut
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CPaperCutDoc
+	
+	[ uuid(9837ABA5-3851-11D6-A858-0040F4309CCE) ]
+	dispinterface IPaperCut
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CPaperCutDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CPaperCutDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CPaperCutDoc
+	
+	[ uuid(9837ABA3-3851-11D6-A858-0040F4309CCE) ]
+	coclass Document
+	{
+		[default] dispinterface IPaperCut;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

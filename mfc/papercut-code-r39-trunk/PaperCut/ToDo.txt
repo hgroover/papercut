@@ -1,0 +1,48 @@
+$Id$
+
+Features:
+
+- Synch this list with /wishlist.php
+- Add status bar to CPaperCutView
+- Add 3D view
+- Implement convex hull
+- Use knapsack fitting for pages
+- Select vertex as "north pole" and calculate facial orientation
+- Render text in face
+- Allow right-click editing of face text / bitmaps
+- Specify resources in file
+- Allow text files to be specified as a resource and wrapped across 
+  adjoining faces
+- Support in-place activation and editing via COM
+- Allow configuration of tab parameters
+- Options
+- Export to .gif, .jpg or .png
+- Export to .pdf
+- Import 3d drawing files
+- Add 4v geodesic
+- Allow arbitrary geodesic breakdowns
+- Allow an image to be centered on a face and spread over to adjoining faces
+
+
++ Use optimal rotation for each
++ Use half-assed fitting for pages
++ Add geodesic commands similar to Stellate
++ Add "shape modified" flag
++ Add check for modified doc (use MFC)
++ Add "Stellate" command in Shapes menu
++ SetRegistryKey( "HGSoft" ) in CWinApp
++ Store fixup references in CString for edge and vertex
++ Add recursive fixup to resolve symbolic references
++ No reparsing in CreateFromSymbolic2
+
+Bugs:
+
+- Cannot split tetrahedron - 2 pages each with 4 faces :-~
+- Print rotated clips stellated tetrahedron off page
+
++ Stellating geodesic does not work - edge overlap
++ Stellating geodesic does not work - edge length mismatch
++ Network printing bug - nothing comes out!
++ Stellated figures ok, overlapping tabs not!
++ Add angle check in AutoJoin (too sharp for tabs)
++ Shapes menu missing from doc menu

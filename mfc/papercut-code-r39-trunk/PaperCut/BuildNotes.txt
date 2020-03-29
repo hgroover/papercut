@@ -1,0 +1,44 @@
+$Id$
+
+Build notes for PaperCut release (updated 25Apr2006)
+* Exit devstudio
+* Run bumpver --refresh from PaperCut directory
+* Check in subversion
+* Build release version of PapercutSetup in VS2003 (also builds Papercutdeploy)
+* Run pcdeploy.bat from top-level project directory (which simply runs PaperCutDeploy\Release\PaperCutDeploy.exe)
+  Note that PapercutDeploy needs zip.list present in the current directory
+* Web updates (news items, gallery items)
+* Update shapes.php if applicable
+* Sync releases to paper-model.com
+* cd ..\..\web\papercut-home\release
+* ftp upload.sourceforge.net (anonymous) (cd incoming ; mput papercut-alpha-1-0-<releasenum>-*.*
+* SourceForge file release system (Admin, File releases, login, Add release, 1.0.<releasenum>, ...)
+* Paste in comments as release notes
+* Paste in readme.txt as change log
+* Remove comment.txt from components
+* Classify uploaded components
+After release
+* Bumpver
+* increment setup version
+* Set version resource info
+
+
+Older build notes (deprecated - mostly handled by PaperCutDeploy now)
+
+* Complete build of release version (also builds help)
+* Complete build in InstallShield and update Packaged media
+* Create self-extracting archive using WinRAR:
+ - Save in my documents\web\papercut-home\papercut-alpha-1-0-281-setup.exe
+ - Best compression
+ - SFX with recovery record
+ - RAR
+ - Under Advanced tab, select SFX options
+  + General: run after extraction - setup.exe
+  + Modes: Unpack to temporary folder
+  + .....: Overwrite mode: overwrite all files
+
+Script setup is
+Setup=setup.exe
+TempMode
+Overwrite=1
+

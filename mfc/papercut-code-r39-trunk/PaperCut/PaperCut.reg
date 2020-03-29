@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\PaperCut.Document = Shape Definition
+HKEY_CLASSES_ROOT\PaperCut.Document\CLSID = {9837ABA3-3851-11D6-A858-0040F4309CCE}
+
+HKEY_CLASSES_ROOT\CLSID\{9837ABA3-3851-11D6-A858-0040F4309CCE} = Shape Definition
+HKEY_CLASSES_ROOT\CLSID\{9837ABA3-3851-11D6-A858-0040F4309CCE}\ProgId = PaperCut.Document
+HKEY_CLASSES_ROOT\CLSID\{9837ABA3-3851-11D6-A858-0040F4309CCE}\LocalServer32 = PAPERCUT.EXE

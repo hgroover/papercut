@@ -1,0 +1,54 @@
+3d rotation and calculations
+
+Given any two points x1,y1,z1 and x2,y2,z2 with the single-axis distances represented as
+dx, dy, and dz
+dx = abs(x1-x2)
+dy = abs(y1-y2)
+dz = abs(z1-z2)
+
+the distance between the points is sqrt(dx*dx + dy*dy + dz*dz)
+
+Rotation into a planar system involves eliminating one dimension.
+This requires rotation on 2+ axes.
+
+For a given triangle in 3-space --
+1. Select one vertex v1 (with coordinates x1,y1,z1) as a pivot point
+2. Select a second vertex v2 (with coordinates x2,y2,z2) as the endpoint of target segment s1
+3. Rotate around the z-axis so that the x component of v2 is 0 with respect to pivot v1.
+4. Rotate around the x-axis so that the z component of v2 is 0 with respect to pivot v1. 
+   s1 is now perpendicular to both the x and z axes.
+5. The remaining vertex is v3 (with coordinates x3,y3,z3). Rotate around the y-axis so that the
+   z component of v3 is 0 with respect to pivot v1. The triangle described by v1,v2,v3 now lies
+   entirely within the plane described by the x and y axes.
+6. Apply the preceding three rotations to other points and test the z component with respect
+   to pivot v1. If distance is 0, point is coplanar with v1, v2 and v3.
+   
+Point rotation --
+
+Origin point is xo,yo,zo. For transformation they will be assigned (not necessarily in the same order)
+to p1o, np2o, np3o. The target coordinates will be p1t, np2t, np3t. p1o == p1t is always true.
+
+One of the three axes is the pivot axis pa. The coordinate corresponding to the pivot axis pa is p1o
+
+Both coordinates np2o,np3o relative to the other two axes will be transformed.
+One of the non-pivot coordinates, np2o, has a target value of 0. Therefore np2t==0.
+The target coordinate p1t == p1o (as stated previously).
+
+There is a point on the pivot axis pa where the axis measurement is p1o. Call this point papt.
+The distance of the segment poa (from xo,yo,zo to papt) is sqrt(np2o*np2o + np3o*np3o)
+
+Calculate the angle of rotation ar1 as follows.
+If np2o is 0, ar1 = 0.
+Otherwise, ar1 = asin(abs(np2o)/poa)
+ar1 belongs to one of four quadrants based on the sign of np2o and np3o
+
+np3o has an implicit rotation angle ar2 from the np2o axis. ar2 = atan(abs(np3o)/abs(np2o))
+ar2 also belongs to one of four quadrants.
+
+The combined angle of rotation ar3 = ar1 + ar2 modulo 90
+ar3 belongs to one of four quadrants
+
+Therefore, p1t = p1o
+				   np2t = 0
+				   np3t = 
+				   

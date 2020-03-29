@@ -1,0 +1,85 @@
+$Id$
+========================================================================
+       MICROSOFT FOUNDATION CLASS LIBRARY : PaperCut
+========================================================================
+
+Title:
+PaperCut Design document v1.0 (way out of date)
+
+Abstract:
+This is a brief overview of the current design strategy for PaperCut.
+Classes and their interactions are described in summary.
+
+Introduction:
+PaperCut is an application for creating layouts of paper models.
+
+File format:
+PaperCut reads and writes a native .shp file consisting of simple
+textual definition statements.  It also imports other types of drawing
+files (future).  The Shape file format is defined in ShapeFileFormat.txt
+
+Dependent DLLs:
+These should normally be present on any system -
+  Debug			Release
+  MFC42D.DLL	MFC42.DLL
+  MFCN42D.DLL
+  MFCO42D.DLL
+  MSVCRTD.DLL	MSVCRT.DLL
+
+Classes:
+
+CPaperCutDoc
+	Standard MFC CDocument derivative.  Contains public m_pShape and
+	m_pShapeLayout, and wraps serialization.
+
+CShape
+	Logical representation of a shape.  Has multiple incestuous relationships
+	with owned and managed objects CFace, CEdge, and CVertex
+
+CFace
+	A single face of a shape.  A shape may be a polyhedron (but not always).
+	Calculation of inside angles is supported for triangular faces only.
+	Connected to other faces via edges.  The outer surface of a face ("outer"
+	being relative to the interior of a solid polyhedron) is visible.  Facing
+	the outer edge, vertices are always counted clockwise.  This is crucial
+	to the layout algorithm used.
+
+CEdge
+	A single edge of a face, participating in that face.  Two edges must
+	always join to create a vertex - no dangling lines are supported!
+	When two edges are joined "outwardly" this connects two faces.
+	A layout may break these outward joins to create a net layout.  That's
+	net as in "fisherman's net", meaning a planar diagram you'd get if
+	you made cuts along the edges of a polyhedron so you could lay out
+	the faces flat.
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+Help Support:
+
+hlp\PaperCut.hpj
+    This file is the Help Project file used by the Help compiler to create
+    your application's Help file.
+
+hlp\*.bmp
+    These are bitmap files required by the standard Help file topics for
+    Microsoft Foundation Class Library standard commands.
+
+hlp\*.rtf
+    This file contains the standard help topics for standard MFC
+    commands and screen objects.
+
+
+
+If your application uses MFC in a shared DLL, and your application is 
+in a language other than the operating system's current language, you
+will need to copy the corresponding localized resources MFC42XXX.DLL
+from the Microsoft Visual C++ CD-ROM onto the system or system32 directory,
+and rename it to be MFCLOC.DLL.  ("XXX" stands for the language abbreviation.
+For example, MFC42DEU.DLL contains resources translated to German.)  If you
+don't do this, some of the UI elements of your application will remain in the
+language of the operating system.
+
+/////////////////////////////////////////////////////////////////////////////
