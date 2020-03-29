@@ -1,0 +1,74 @@
+$Id$
+PaperCut Shape File format, v1.01
+
+PaperCut uses the .shp file to define model shapes.
+This document describes the syntax of the .shp file.
+
+Encoding
+Shape files are plain text but always encoded as UTF-8.
+This means that characters outside the "plain ASCII" range
+are likely to end up as multi-character sequences.  But it
+will show up just fine in PaperCut, never fear.
+
+Comments
+Shape files may contain any number of blank lines and
+comments.  A comment is any line beginning with the hash
+mark (#).
+
+Record delimiters
+Shape files are delimited by CR, LF, or CRLF together (MAC,
+UNIX, or DOS - all are acceptable).  Each line constitutes
+a single record.
+
+Record syntax
+Each record consists of a keyword followed by zero or more
+arguments.  Records are described here grouped by the number
+of arguments they take.
+Records may be preceded by any amount of tabs and/or spaces.
+Trailing whitespace may be counted as part of a name in name
+records, otherwise it is ignored.
+
+0 (zero) arguments
+------------------
+
+{
+(open brace) Begins a list of records belonging to an object.
+Object types include shape, face, edge and vertex.
+
+}
+(close brace) Ends a list of records belonging to an object.
+Note that PaperCut always tries to neatly indent records
+to show the nesting of objects, but indentation is NOT
+required for PaperCut to make sense of a .shp file.
+
+
+1 argument
+----------
+
+image filename
+Specifies the name of a .bmp file to be rendered on a face.
+Not applicable to anything else.  Filename may contain spaces.
+Will be interpreted relative to PaperCut document directory
+unless it begins with slash.  Backslash may NOT be used in
+filenames.
+
+name value
+This defines a name for the current object.  May contain spaces
+BUT object names containing spaces may NOT be used for joining
+edges.  Thus object names with spaces should be avoided for edges
+and faces.
+
+text value
+This defines text to be rendered on a face.  Not applicable to
+edges and vertices.
+Note that value may contain spaces.  It will be read up to (but
+not including) the end of the line.
+
+2+ arguments
+------------
+
+dictentry name value
+Defines a shape dictionary entry
+
+settings ...
+Shape-specific settings.
