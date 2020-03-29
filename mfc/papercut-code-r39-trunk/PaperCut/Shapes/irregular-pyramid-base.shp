@@ -1,0 +1,61 @@
+# Written by PaperCut
+# EDIT AT YOUR OWN RISK - this file contains sequence-dependent
+# data.
+# Saved at 03/30/02 08:06:58
+#
+#
+object shape
+{
+  name Frag
+  object face
+  {
+    name A
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.0
+      orient 0.000000
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 0.6
+      orient 0.000000
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 0.8
+      orient 0.000000
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      pivot 0
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      pivot 0
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      pivot 0
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

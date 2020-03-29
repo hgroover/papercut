@@ -1,0 +1,198 @@
+# Written by PaperCut
+# EDIT AT YOUR OWN RISK - this file contains sequence-dependent
+# data.
+# Saved at 03/30/02 08:20:34
+#
+# name Frag,{As2,0.000000,{a,As2,0.351511,0.000000,A:b,c.a,a.b,},{b,As2,0.493518,0.000000,As1:a,a.b,b.c,},{c,As2,0.600000,0.000000,,b.c,c.a,},{a.b,As2,0,88.824125,a,b,},{c.a,As2,0,55.321415,c,a,},{b.c,As2,0,35.854460,b,c,},},{A,0.000000,{a,A,0.666003,0.000000,As1:b,c.a,a.b,},{b,A,0.351511,0.000000,As2:a,a.b,b.c,},{c,A,0.800000,0.000000,,b.c,c.a,},{a.b,A,0,98.954789,a,b,},{c.a,A,0,25.723796,c,a,},{b.c,A,0,55.321415,b,c,},},{As1,0.000000,{a,As1,0.493518,0.000000,As2:b,c.a,a.b,},{b,As1,0.666003,0.000000,A:a,a.b,b.c,},{c,As1,1.000000,0.000000,,b.c,c.a,},{a.b,As1,0,118.421744,a,b,},{c.a,As1,0,35.854460,c,a,},{b.c,As1,0,25.723796,b,c,},}
+#
+object shape
+{
+  name Frag
+  object face
+  {
+    name As2
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner As2
+      length 0.351511
+      orient 0.000000
+      outward A:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As2
+      length 0.493518
+      orient 0.000000
+      outward As1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As2
+      length 0.600000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As2
+      pivot 0
+      inside 88.824125
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As2
+      pivot 0
+      inside 55.321415
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As2
+      pivot 0
+      inside 35.854460
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name A
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner A
+      length 0.666003
+      orient 0.000000
+      outward As1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner A
+      length 0.351511
+      orient 0.000000
+      outward As2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner A
+      length 0.800000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner A
+      pivot 0
+      inside 98.954789
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner A
+      pivot 0
+      inside 25.723796
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner A
+      pivot 0
+      inside 55.321415
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As1
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner As1
+      length 0.493518
+      orient 0.000000
+      outward As2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As1
+      length 0.666003
+      orient 0.000000
+      outward A:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As1
+      length 1.000000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As1
+      pivot 0
+      inside 118.421744
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As1
+      pivot 0
+      inside 35.854460
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As1
+      pivot 0
+      inside 25.723796
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

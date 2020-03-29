@@ -1,0 +1,607 @@
+# Stellated tetrahedron - tetrahedron formed by joining the bases of four tetrahedra
+#
+object shape
+{
+  name Stellated tetrahedron
+  object face
+  {
+    name A1
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward A3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward A2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward B2:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name A2
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward A1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward A3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward D1:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name A3
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward A2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward A1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward C1:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name B1
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward B3:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward B2:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward D3:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name B2
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward A1:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward B1:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward B3:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name B3
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward C2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward B2:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward B1:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name C1
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward C3:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward A3:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward C2:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name C2
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward C1:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward B3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward C3:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name C3
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward C2:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward D2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward C1:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name D1
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward A2:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward D2:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward D3:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name D2
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward C3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward D3:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward D1:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name D3
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      orient 0.000000
+      outward B1:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      orient 0.000000
+      outward D1:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      orient 0.000000
+      outward D2:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

@@ -1,0 +1,1058 @@
+# Written by PaperCut v1.00.297
+# Saved at 05/06/06 21:15:18
+#
+layout
+{
+  pagewidth 7.550000
+  widthratio 0.762000
+}
+object shape
+{
+  name Photocube
+  settings  PictureFlow=1 ScaleMethod=2 FontPointsize=12 UseTabs=3 FontAttributes=190 EdgeColor=0 FaceColor=0 TabColor=0 FaceBgColor=ffffff TabBgColor=ffffff InwdEdgeColor=0 TabShoulderAngle=24.000000 MinFitAngle=30.000000 AreaRatio=0.750000 HeightRatio=0.820000 BaseRatio=0.960000 OrgRatio=1.000000 DefaultFaceText="" FontTypeface="Arial Black"
+  object face
+  {
+    name SB
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SB
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SA:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SB
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SC:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SB
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SF:d
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SB
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJ:c
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SB
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SB
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SB
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SB
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SC
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SC
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SB:b
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SC
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SA:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SC
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SD:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SC
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SE:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SC
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SC
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SC
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SC
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SD
+    orient 0.000000
+    groups 
+    base c
+    object edge
+    {
+      name a
+      owner SD
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SC:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SD
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SL:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SD
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SH:b
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SD
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SE:a
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SD
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SD
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SD
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SD
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SE
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SE
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SD:d
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SE
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SG:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SE
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SF:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SE
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SC:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SE
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SE
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SE
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SE
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SF
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SF
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SE:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SF
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SG:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SF
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJ:d
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SF
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SB:c
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SF
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SF
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SF
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SF
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SG
+    orient 0.000000
+    groups 
+    base a
+    object edge
+    {
+      name a
+      owner SG
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SF:b
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SG
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SE:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SG
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SH:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SG
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SI:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SG
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SG
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SG
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SG
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SH
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SH
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SG:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SH
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SD:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SH
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SL:b
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SH
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SI:a
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SH
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SH
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SH
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SH
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SI
+    orient 0.000000
+    groups 
+    base c
+    object edge
+    {
+      name a
+      owner SI
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SH:d
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SI
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SK:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SI
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJ:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SI
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SG:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SI
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SI
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SI
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SI
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SJ
+    orient 0.000000
+    groups 
+    base b
+    object edge
+    {
+      name a
+      owner SJ
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SI:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SJ
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SK:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SJ
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SB:d
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SJ
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SF:c
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SJ
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SJ
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SJ
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SJ
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SK
+    orient 0.000000
+    groups 
+    base b
+    object edge
+    {
+      name a
+      owner SK
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJ:b
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SK
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SI:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SK
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SL:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SK
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SA:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SK
+      pivot 0
+      inside 109.4712206344906900
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SK
+      pivot 0
+      inside 109.4712206344906900
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SK
+      pivot 0
+      inside 70.5287793655093080
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SK
+      pivot 0
+      inside 70.5287793655093080
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SL
+    orient 0.000000
+    groups 
+    base b
+    object edge
+    {
+      name a
+      owner SL
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SK:c
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SL
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SH:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SL
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SD:b
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SL
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SA:a
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SL
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SL
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SL
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SL
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SA
+    orient 0.000000
+    groups 
+    base d
+    object edge
+    {
+      name a
+      owner SA
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SL:d
+      start d.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SA
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SC:b
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SA
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SB:a
+      start b.c
+      end c.d
+    }
+    object edge
+    {
+      name d
+      owner SA
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SK:d
+      start c.d
+      end d.a
+    }
+    object vertex
+    {
+      name c.d
+      owner SA
+      pivot 0
+      inside 70.5287793655093080
+      leg0 c
+      leg1 d
+    }
+    object vertex
+    {
+      name a.b
+      owner SA
+      pivot 0
+      inside 70.5287793655093080
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name d.a
+      owner SA
+      pivot 0
+      inside 109.4712206344906900
+      leg0 d
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SA
+      pivot 0
+      inside 109.4712206344906900
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

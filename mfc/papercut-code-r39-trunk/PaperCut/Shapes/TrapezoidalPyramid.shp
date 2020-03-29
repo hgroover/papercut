@@ -1,0 +1,265 @@
+# Written by PaperCut v1.00 build 296
+# Saved at 04/23/06 21:56:59
+#
+layout
+{
+  pagewidth 5.900000
+  widthratio 0.762000
+}
+object shape
+{
+  name TrapezoidalPyramidBase
+  object face
+  {
+    name TAs1
+    orient 90.000000
+    groups :TA_grp:
+    object edge
+    {
+      name a
+      owner TAs1
+      length 5.355000
+      orient 0.000000
+      outward TAs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner TAs1
+      length 4.634230
+      orient 0.000000
+      outward TAs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner TAs1
+      length 3.625000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner TAs1
+      pivot 0
+      inside 41.779952
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner TAs1
+      pivot 0
+      inside 58.404396
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner TAs1
+      pivot 0
+      inside 79.815653
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name TAs2
+    orient 90.000000
+    groups :TA_grp:
+    object edge
+    {
+      name a
+      owner TAs2
+      length 4.973521
+      orient 0.000000
+      outward TAs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner TAs2
+      length 5.355000
+      orient 0.000000
+      outward TAs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner TAs2
+      length 5.355000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner TAs2
+      pivot 0
+      inside 62.329825
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner TAs2
+      pivot 0
+      inside 62.329825
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner TAs2
+      pivot 0
+      inside 55.340349
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name TAs3
+    orient 90.000000
+    groups :TA_grp:
+    object edge
+    {
+      name a
+      owner TAs3
+      length 4.552235
+      orient 0.000000
+      outward TAs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner TAs3
+      length 4.973521
+      orient 0.000000
+      outward TAs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner TAs3
+      length 1.937500
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner TAs3
+      pivot 0
+      inside 22.924696
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner TAs3
+      pivot 0
+      inside 89.158164
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner TAs3
+      pivot 0
+      inside 66.233469
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name TAs4
+    orient 90.000000
+    groups :TA_grp:
+    object edge
+    {
+      name a
+      owner TAs4
+      length 4.634230
+      orient 0.000000
+      outward TAs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner TAs4
+      length 4.552235
+      orient 0.000000
+      outward TAs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner TAs4
+      length 2.500000
+      orient 0.000000
+      outward 
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner TAs4
+      pivot 0
+      inside 31.567095
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner TAs4
+      pivot 0
+      inside 72.407804
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner TAs4
+      pivot 0
+      inside 76.025102
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

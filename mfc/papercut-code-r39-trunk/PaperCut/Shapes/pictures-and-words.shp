@@ -1,0 +1,260 @@
+# Written by PaperCut v1.00 build 243
+# Saved at 04/16/02 00:22:23
+#
+object shape
+{
+  name Default shape
+  object face
+  {
+    name D
+    text This space^Intentionally left blank -^Is that a haiku?
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner D
+      length 1.000000
+      orient 0.000000
+      outward A:c
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner D
+      length 1.000000
+      orient 0.000000
+      outward B:c
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner D
+      length 1.000000
+      orient 0.000000
+      outward C:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner D
+      pivot 0
+      inside 60.000000
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner D
+      pivot 0
+      inside 60.000000
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner D
+      pivot 0
+      inside 60.000000
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name A
+    text A warm summer breeze^Plays delicately^A fine symphony of touch and scent^Accompanied by the wind-chimes
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner A
+      length 1.000000
+      orient 0.000000
+      outward C:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner A
+      length 1.000000
+      orient 0.000000
+      outward B:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner A
+      length 1.000000
+      orient 0.000000
+      outward D:a
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner A
+      pivot 0
+      inside 60.000000
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner A
+      pivot 0
+      inside 60.000000
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner A
+      pivot 0
+      inside 60.000000
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name B
+    content file="anne-hathaway-cottage.jpg"
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner B
+      length 1.000000
+      orient 0.000000
+      outward A:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner B
+      length 1.000000
+      orient 0.000000
+      outward C:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner B
+      length 1.000000
+      orient 0.000000
+      outward D:b
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner B
+      pivot 0
+      inside 60.000000
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner B
+      pivot 0
+      inside 60.000000
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner B
+      pivot 0
+      inside 60.000000
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name C
+    text Anne Hathaway's^cottage,^Stratford-upon-Avon^England
+    orient 0.000000
+    object edge
+    {
+      name a
+      owner C
+      length 1.000000
+      orient 0.000000
+      outward B:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner C
+      length 1.000000
+      orient 0.000000
+      outward A:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner C
+      length 1.000000
+      orient 0.000000
+      outward D:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner C
+      pivot 0
+      inside 60.000000
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner C
+      pivot 0
+      inside 60.000000
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner C
+      pivot 0
+      inside 60.000000
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

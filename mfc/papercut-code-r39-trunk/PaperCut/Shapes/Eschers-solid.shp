@@ -1,0 +1,3229 @@
+# Written by PaperCut v1.00.297
+# Saved at 05/07/06 17:18:52
+#
+layout
+{
+  pagewidth 2.900000
+  widthratio 0.762000
+}
+object shape
+{
+  name Escher's Solid-1
+  object face
+  {
+    name SAs1
+    orient 90.000000
+    groups :SA_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SAs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SAs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SAs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SAs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SAs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SCs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SAs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SAs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SAs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SAs2
+    orient 90.000000
+    groups :SA_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SAs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SAs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SAs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SAs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SAs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SBs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SAs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SAs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SAs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SBs1
+    orient 90.000000
+    groups :SB_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SBs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SBs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SBs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SBs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SBs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SCs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SBs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SBs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SBs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SAs3
+    orient 90.000000
+    groups :SA_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SAs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SAs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SAs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SAs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SAs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SKs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SAs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SAs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SAs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SCs1
+    orient 90.000000
+    groups :SC_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SCs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SCs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SCs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SCs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SCs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SAs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SCs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SCs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SCs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SBs2
+    orient 90.000000
+    groups :SB_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SBs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SBs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SBs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SBs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SBs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SFs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SBs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SBs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SBs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SAs4
+    orient 90.000000
+    groups :SA_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SAs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SAs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SAs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SAs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SAs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SLs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SAs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SAs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SAs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SDs1
+    orient 90.000000
+    groups :SD_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SDs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SDs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SDs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SDs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SDs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SCs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SDs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SDs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SDs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SCs2
+    orient 90.000000
+    groups :SC_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SCs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SCs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SCs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SCs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SCs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SDs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SCs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SCs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SCs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SBs3
+    orient 90.000000
+    groups :SB_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SBs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SBs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SBs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SBs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SBs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SJs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SBs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SBs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SBs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SEs1
+    orient 90.000000
+    groups :SE_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SEs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SEs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SEs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SEs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SEs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SGs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SEs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SEs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SEs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SDs2
+    orient 90.000000
+    groups :SD_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SDs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SDs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SDs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SDs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SDs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SLs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SDs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SDs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SDs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SCs3
+    orient 90.000000
+    groups :SC_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SCs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SCs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SCs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SCs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SCs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SEs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SCs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SCs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SCs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SBs4
+    orient 90.000000
+    groups :SB_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SBs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SBs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SBs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SBs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SBs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SAs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SBs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SBs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SBs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SFs1
+    orient 90.000000
+    groups :SF_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SFs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SFs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SFs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SFs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SFs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SGs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SFs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SFs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SFs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SEs2
+    orient 90.000000
+    groups :SE_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SEs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SEs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SEs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SEs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SEs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SFs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SEs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SEs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SEs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SDs3
+    orient 90.000000
+    groups :SD_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SDs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SDs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SDs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SDs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SDs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SHs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SDs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SDs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SDs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SCs4
+    orient 90.000000
+    groups :SC_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SCs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SCs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SCs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SCs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SCs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SBs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SCs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SCs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SCs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SGs1
+    orient 90.000000
+    groups :SG_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SGs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SGs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SGs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SGs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SGs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SHs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SGs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SGs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SGs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SFs2
+    orient 90.000000
+    groups :SF_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SFs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SFs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SFs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SFs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SFs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SJs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SFs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SFs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SFs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SEs3
+    orient 90.000000
+    groups :SE_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SEs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SEs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SEs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SEs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SEs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SCs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SEs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SEs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SEs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SDs4
+    orient 90.000000
+    groups :SD_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SDs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SDs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SDs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SDs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SDs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SEs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SDs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SDs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SDs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SHs1
+    orient 90.000000
+    groups :SH_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SHs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SHs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SHs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SHs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SHs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SDs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SHs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SHs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SHs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SGs2
+    orient 90.000000
+    groups :SG_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SGs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SGs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SGs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SGs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SGs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SIs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SGs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SGs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SGs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SFs3
+    orient 90.000000
+    groups :SF_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SFs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SFs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SFs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SFs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SFs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SBs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SFs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SFs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SFs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SEs4
+    orient 90.000000
+    groups :SE_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SEs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SEs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SEs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SEs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SEs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SDs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SEs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SEs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SEs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SIs1
+    orient 90.000000
+    groups :SI_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SIs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SIs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SIs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SIs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SIs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SHs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SIs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SIs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SIs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SHs2
+    orient 90.000000
+    groups :SH_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SHs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SHs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SHs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SHs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SHs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SLs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SHs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SHs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SHs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SGs3
+    orient 90.000000
+    groups :SG_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SGs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SGs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SGs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SGs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SGs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SFs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SGs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SGs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SGs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SFs4
+    orient 90.000000
+    groups :SF_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SFs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SFs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SFs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SFs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SFs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SEs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SFs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SFs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SFs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SJs1
+    orient 90.000000
+    groups :SJ_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SJs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SJs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SJs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SJs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SFs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SJs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SJs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SJs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SIs2
+    orient 90.000000
+    groups :SI_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SIs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SIs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SIs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SIs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SIs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SKs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SIs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SIs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SIs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SHs3
+    orient 90.000000
+    groups :SH_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SHs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SHs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SHs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SHs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SHs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SIs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SHs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SHs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SHs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SGs4
+    orient 90.000000
+    groups :SG_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SGs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SGs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SGs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SGs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SGs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SEs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SGs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SGs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SGs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SKs1
+    orient 90.000000
+    groups :SK_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SKs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SKs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SKs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SKs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SKs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SAs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SKs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SKs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SKs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SJs2
+    orient 90.000000
+    groups :SJ_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SJs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SJs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SJs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SJs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SIs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SJs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SJs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SJs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SIs3
+    orient 90.000000
+    groups :SI_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SIs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SIs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SIs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SIs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SIs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SJs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SIs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SIs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SIs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SHs4
+    orient 90.000000
+    groups :SH_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SHs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SHs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SHs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SHs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SHs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SGs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SHs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SHs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SHs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SLs1
+    orient 90.000000
+    groups :SL_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SLs1
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SLs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SLs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SLs4:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SLs1
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SAs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SLs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SLs1
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SLs1
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SKs2
+    orient 90.000000
+    groups :SK_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SKs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SKs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SKs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SKs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SKs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SJs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SKs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SKs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SKs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SJs3
+    orient 90.000000
+    groups :SJ_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SJs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SJs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SJs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SJs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SKs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SJs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SJs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SJs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SIs4
+    orient 90.000000
+    groups :SI_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SIs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SIs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SIs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SIs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SIs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SGs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SIs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SIs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SIs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SLs2
+    orient 90.000000
+    groups :SL_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SLs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SLs3:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SLs2
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SLs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SLs2
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SKs4:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SLs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SLs2
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SLs2
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SKs3
+    orient 90.000000
+    groups :SK_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SKs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SKs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SKs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SKs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SKs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SIs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SKs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SKs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SKs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SJs4
+    orient 90.000000
+    groups :SJ_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SJs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SJs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SJs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SJs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SJs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SBs3:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SJs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SJs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SJs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SLs3
+    orient 90.000000
+    groups :SL_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SLs3
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SLs4:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SLs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SLs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SLs3
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SHs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SLs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SLs3
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SLs3
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SKs4
+    orient 90.000000
+    groups :SK_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SKs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SKs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SKs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SKs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SKs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SLs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SKs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SKs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SKs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name SLs4
+    orient 90.000000
+    groups :SL_grp:
+    base c
+    object edge
+    {
+      name a
+      owner SLs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 0
+      outward SLs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner SLs4
+      length 0.8164965809729771
+      orient 0.0000000000000000
+      concave 0
+      outward SLs3:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner SLs4
+      length 1.0000000000000000
+      orient 0.0000000000000000
+      concave 1
+      outward SDs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner SLs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner SLs4
+      pivot 0
+      inside 48.1896851070615570
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner SLs4
+      pivot 0
+      inside 65.9051574464692180
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

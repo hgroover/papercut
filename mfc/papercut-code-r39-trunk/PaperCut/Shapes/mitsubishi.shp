@@ -1,0 +1,2281 @@
+# Written by PaperCut v1.00 build 259
+# Saved at 04/21/02 08:28:48
+#
+layout
+{
+  pagewidth 2.550000
+  widthratio 0.762000
+}
+object shape
+{
+  name Default shape
+  object face
+  {
+    name Bs1
+    orient 0.000000
+    groups :B_grp:Bs1_grp:
+    object edge
+    {
+      name a
+      owner Bs1
+      length 0.574006
+      orient 0.000000
+      outward Bs1s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs1
+      length 0.574006
+      orient 0.000000
+      outward Bs1s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs1
+      length 1.000000
+      orient 0.000000
+      outward As2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs1
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs1
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As2
+    orient 0.000000
+    groups :A_grp:As2_grp:
+    object edge
+    {
+      name a
+      owner As2
+      length 0.574006
+      orient 0.000000
+      outward As2s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As2
+      length 0.574006
+      orient 0.000000
+      outward As2s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As2
+      length 1.000000
+      orient 0.000000
+      outward Bs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As2
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As2
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name D
+    orient 0.000000
+    groups :D_grp:
+    object edge
+    {
+      name a
+      owner D
+      length 0.574006
+      orient 0.000000
+      outward Ds1D:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner D
+      length 0.574006
+      orient 0.000000
+      outward Ds2D:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner D
+      length 1.000000
+      orient 0.000000
+      outward C:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner D
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner D
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner D
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As1s1
+    orient 0.000000
+    groups :As1_grp:
+    object edge
+    {
+      name a
+      owner As1s1
+      length 0.423856
+      orient 0.000000
+      outward As1s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As1s1
+      length 0.574006
+      orient 0.000000
+      outward As1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As1s1
+      length 0.816497
+      orient 0.000000
+      outward As2s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As1s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As1s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As1s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs1
+    orient 0.000000
+    groups :C_grp:Cs1_grp:
+    object edge
+    {
+      name a
+      owner Cs1
+      length 0.574006
+      orient 0.000000
+      outward Cs1s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs1
+      length 0.574006
+      orient 0.000000
+      outward Cs1s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs1
+      length 1.000000
+      orient 0.000000
+      outward Bs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs1
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs1
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs2
+    orient 0.000000
+    groups :B_grp:Bs2_grp:
+    object edge
+    {
+      name a
+      owner Bs2
+      length 0.574006
+      orient 0.000000
+      outward Bs2s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs2
+      length 0.574006
+      orient 0.000000
+      outward Bs2s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs2
+      length 1.000000
+      orient 0.000000
+      outward Cs1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs2
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs2
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As1s2
+    orient 0.000000
+    groups :As1_grp:
+    object edge
+    {
+      name a
+      owner As1s2
+      length 0.574006
+      orient 0.000000
+      outward As1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As1s2
+      length 0.423856
+      orient 0.000000
+      outward As1s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As1s2
+      length 0.816497
+      orient 0.000000
+      outward As1A:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As1s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As1s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As1s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As2s1
+    orient 0.000000
+    groups :As2_grp:
+    object edge
+    {
+      name a
+      owner As2s1
+      length 0.423856
+      orient 0.000000
+      outward As2s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As2s1
+      length 0.574006
+      orient 0.000000
+      outward As2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As2s1
+      length 0.816497
+      orient 0.000000
+      outward As2A:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As2s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As2s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As2s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs1s1
+    orient 0.000000
+    groups :Bs1_grp:
+    object edge
+    {
+      name a
+      owner Bs1s1
+      length 0.423856
+      orient 0.000000
+      outward Bs1s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs1s1
+      length 0.574006
+      orient 0.000000
+      outward Bs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs1s1
+      length 0.816497
+      orient 0.000000
+      outward Bs2s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs1s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs1s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs1s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs2
+    orient 0.000000
+    groups :C_grp:Cs2_grp:
+    object edge
+    {
+      name a
+      owner Cs2
+      length 0.574006
+      orient 0.000000
+      outward Cs2s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs2
+      length 0.574006
+      orient 0.000000
+      outward Cs2s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs2
+      length 1.000000
+      orient 0.000000
+      outward As1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs2
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs2
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds1
+    orient 0.000000
+    groups :D_grp:Ds1_grp:
+    object edge
+    {
+      name a
+      owner Ds1
+      length 0.574006
+      orient 0.000000
+      outward Ds1s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds1
+      length 0.574006
+      orient 0.000000
+      outward Ds1s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds1
+      length 1.000000
+      orient 0.000000
+      outward A:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds1
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds1
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs2s1
+    orient 0.000000
+    groups :Bs2_grp:
+    object edge
+    {
+      name a
+      owner Bs2s1
+      length 0.423856
+      orient 0.000000
+      outward Bs2s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs2s1
+      length 0.574006
+      orient 0.000000
+      outward Bs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs2s1
+      length 0.816497
+      orient 0.000000
+      outward Bs2B:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs2s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs2s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs2s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs1s1
+    orient 0.000000
+    groups :Cs1_grp:
+    object edge
+    {
+      name a
+      owner Cs1s1
+      length 0.423856
+      orient 0.000000
+      outward Cs1s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs1s1
+      length 0.574006
+      orient 0.000000
+      outward Cs1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs1s1
+      length 0.816497
+      orient 0.000000
+      outward Cs2s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs1s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs1s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs1s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As2s2
+    orient 0.000000
+    groups :As2_grp:
+    object edge
+    {
+      name a
+      owner As2s2
+      length 0.574006
+      orient 0.000000
+      outward As2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As2s2
+      length 0.423856
+      orient 0.000000
+      outward As2s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As2s2
+      length 0.816497
+      orient 0.000000
+      outward As1s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As2s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As2s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As2s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs1s2
+    orient 0.000000
+    groups :Bs1_grp:
+    object edge
+    {
+      name a
+      owner Bs1s2
+      length 0.574006
+      orient 0.000000
+      outward Bs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs1s2
+      length 0.423856
+      orient 0.000000
+      outward Bs1s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs1s2
+      length 0.816497
+      orient 0.000000
+      outward Bs1B:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs1s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs1s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs1s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds2
+    orient 0.000000
+    groups :D_grp:Ds2_grp:
+    object edge
+    {
+      name a
+      owner Ds2
+      length 0.574006
+      orient 0.000000
+      outward Ds2s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds2
+      length 0.574006
+      orient 0.000000
+      outward Ds2s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds2
+      length 1.000000
+      orient 0.000000
+      outward B:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds2
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds2
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds1s1
+    orient 0.000000
+    groups :Ds1_grp:
+    object edge
+    {
+      name a
+      owner Ds1s1
+      length 0.423856
+      orient 0.000000
+      outward Ds1s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds1s1
+      length 0.574006
+      orient 0.000000
+      outward Ds1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds1s1
+      length 0.816497
+      orient 0.000000
+      outward Ds2s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds1s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds1s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds1s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs2s1
+    orient 0.000000
+    groups :Cs2_grp:
+    object edge
+    {
+      name a
+      owner Cs2s1
+      length 0.423856
+      orient 0.000000
+      outward Cs2s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs2s1
+      length 0.574006
+      orient 0.000000
+      outward Cs2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs2s1
+      length 0.816497
+      orient 0.000000
+      outward Cs2C:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs2s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs2s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs2s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs2s2
+    orient 0.000000
+    groups :Bs2_grp:
+    object edge
+    {
+      name a
+      owner Bs2s2
+      length 0.574006
+      orient 0.000000
+      outward Bs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs2s2
+      length 0.423856
+      orient 0.000000
+      outward Bs2s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs2s2
+      length 0.816497
+      orient 0.000000
+      outward Bs1s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs2s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs2s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs2s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs1s2
+    orient 0.000000
+    groups :Cs1_grp:
+    object edge
+    {
+      name a
+      owner Cs1s2
+      length 0.574006
+      orient 0.000000
+      outward Cs1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs1s2
+      length 0.423856
+      orient 0.000000
+      outward Cs1s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs1s2
+      length 0.816497
+      orient 0.000000
+      outward Cs1C:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs1s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs1s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs1s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds2s1
+    orient 0.000000
+    groups :Ds2_grp:
+    object edge
+    {
+      name a
+      owner Ds2s1
+      length 0.423856
+      orient 0.000000
+      outward Ds2s2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds2s1
+      length 0.574006
+      orient 0.000000
+      outward Ds2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds2s1
+      length 0.816497
+      orient 0.000000
+      outward Ds2D:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds2s1
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds2s1
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds2s1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds1s2
+    orient 0.000000
+    groups :Ds1_grp:
+    object edge
+    {
+      name a
+      owner Ds1s2
+      length 0.574006
+      orient 0.000000
+      outward Ds1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds1s2
+      length 0.423856
+      orient 0.000000
+      outward Ds1s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds1s2
+      length 0.816497
+      orient 0.000000
+      outward Ds1D:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds1s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds1s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds1s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs2s2
+    orient 0.000000
+    groups :Cs2_grp:
+    object edge
+    {
+      name a
+      owner Cs2s2
+      length 0.574006
+      orient 0.000000
+      outward Cs2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs2s2
+      length 0.423856
+      orient 0.000000
+      outward Cs2s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs2s2
+      length 0.816497
+      orient 0.000000
+      outward Cs1s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs2s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs2s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs2s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds2s2
+    orient 0.000000
+    groups :Ds2_grp:
+    object edge
+    {
+      name a
+      owner Ds2s2
+      length 0.574006
+      orient 0.000000
+      outward Ds2:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds2s2
+      length 0.423856
+      orient 0.000000
+      outward Ds2s1:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds2s2
+      length 0.816497
+      orient 0.000000
+      outward Ds1s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds2s2
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds2s2
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds2s2
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs2C
+    orient 0.000000
+    groups :C_grp:
+    object edge
+    {
+      name a
+      owner Cs2C
+      length 0.574006
+      orient 0.000000
+      outward C:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs2C
+      length 0.423856
+      orient 0.000000
+      outward Cs1C:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs2C
+      length 0.816497
+      orient 0.000000
+      outward Cs2s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs2C
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs2C
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs2C
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs2B
+    orient 0.000000
+    groups :B_grp:
+    object edge
+    {
+      name a
+      owner Bs2B
+      length 0.574006
+      orient 0.000000
+      outward B:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs2B
+      length 0.423856
+      orient 0.000000
+      outward Bs1B:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs2B
+      length 0.816497
+      orient 0.000000
+      outward Bs2s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs2B
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs2B
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs2B
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As2A
+    orient 0.000000
+    groups :A_grp:
+    object edge
+    {
+      name a
+      owner As2A
+      length 0.574006
+      orient 0.000000
+      outward A:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As2A
+      length 0.423856
+      orient 0.000000
+      outward As1A:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As2A
+      length 0.816497
+      orient 0.000000
+      outward As2s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As2A
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As2A
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As2A
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds2D
+    orient 0.000000
+    groups :D_grp:
+    object edge
+    {
+      name a
+      owner Ds2D
+      length 0.574006
+      orient 0.000000
+      outward D:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds2D
+      length 0.423856
+      orient 0.000000
+      outward Ds1D:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds2D
+      length 0.816497
+      orient 0.000000
+      outward Ds2s1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds2D
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds2D
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds2D
+      pivot 0
+      inside 41.693933
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name A
+    orient 0.000000
+    groups :A_grp:
+    object edge
+    {
+      name a
+      owner A
+      length 0.574006
+      orient 0.000000
+      outward As1A:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner A
+      length 0.574006
+      orient 0.000000
+      outward As2A:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner A
+      length 1.000000
+      orient 0.000000
+      outward Ds1:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner A
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner A
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner A
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Cs1C
+    orient 0.000000
+    groups :C_grp:
+    object edge
+    {
+      name a
+      owner Cs1C
+      length 0.423856
+      orient 0.000000
+      outward Cs2C:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Cs1C
+      length 0.574006
+      orient 0.000000
+      outward C:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Cs1C
+      length 0.816497
+      orient 0.000000
+      outward Cs1s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Cs1C
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Cs1C
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Cs1C
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Bs1B
+    orient 0.000000
+    groups :B_grp:
+    object edge
+    {
+      name a
+      owner Bs1B
+      length 0.423856
+      orient 0.000000
+      outward Bs2B:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Bs1B
+      length 0.574006
+      orient 0.000000
+      outward B:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Bs1B
+      length 0.816497
+      orient 0.000000
+      outward Bs1s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Bs1B
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Bs1B
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Bs1B
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As1A
+    orient 0.000000
+    groups :A_grp:
+    object edge
+    {
+      name a
+      owner As1A
+      length 0.423856
+      orient 0.000000
+      outward As2A:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As1A
+      length 0.574006
+      orient 0.000000
+      outward A:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As1A
+      length 0.816497
+      orient 0.000000
+      outward As1s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As1A
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As1A
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As1A
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name Ds1D
+    orient 0.000000
+    groups :D_grp:
+    object edge
+    {
+      name a
+      owner Ds1D
+      length 0.423856
+      orient 0.000000
+      outward Ds2D:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner Ds1D
+      length 0.574006
+      orient 0.000000
+      outward D:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner Ds1D
+      length 0.816497
+      orient 0.000000
+      outward Ds1s2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner Ds1D
+      pivot 0
+      inside 108.889323
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner Ds1D
+      pivot 0
+      inside 41.693933
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner Ds1D
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name B
+    orient 0.000000
+    groups :B_grp:
+    object edge
+    {
+      name a
+      owner B
+      length 0.574006
+      orient 0.000000
+      outward Bs1B:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner B
+      length 0.574006
+      orient 0.000000
+      outward Bs2B:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner B
+      length 1.000000
+      orient 0.000000
+      outward Ds2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner B
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner B
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner B
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name As1
+    orient 0.000000
+    groups :A_grp:As1_grp:
+    object edge
+    {
+      name a
+      owner As1
+      length 0.574006
+      orient 0.000000
+      outward As1s1:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner As1
+      length 0.574006
+      orient 0.000000
+      outward As1s2:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner As1
+      length 1.000000
+      orient 0.000000
+      outward Cs2:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner As1
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner As1
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner As1
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+  object face
+  {
+    name C
+    orient 0.000000
+    groups :C_grp:
+    object edge
+    {
+      name a
+      owner C
+      length 0.574006
+      orient 0.000000
+      outward Cs1C:b
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      owner C
+      length 0.574006
+      orient 0.000000
+      outward Cs2C:a
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      owner C
+      length 1.000000
+      orient 0.000000
+      outward D:c
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      owner C
+      pivot 0
+      inside 121.166513
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      owner C
+      pivot 0
+      inside 29.416743
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      owner C
+      pivot 0
+      inside 29.416743
+      leg0 b
+      leg1 c
+    }
+  }
+}
+

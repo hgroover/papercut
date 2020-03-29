@@ -1,0 +1,56 @@
+# Written by PaperCut
+# Saved at 03/23/02 09:42:15
+#
+#
+object shape
+{
+  name Single Triangular Face
+  object face
+  {
+    name A
+    orient 0.000000
+    object edge
+    {
+      name a
+      length 1.000000
+      start c.a
+      end a.b
+    }
+    object edge
+    {
+      name b
+      length 1.000000
+      start a.b
+      end b.c
+    }
+    object edge
+    {
+      name c
+      length 1.000000
+      start b.c
+      end c.a
+    }
+    object vertex
+    {
+      name a.b
+      inside 60.000000
+      leg0 a
+      leg1 b
+    }
+    object vertex
+    {
+      name c.a
+      inside 60.000000
+      leg0 c
+      leg1 a
+    }
+    object vertex
+    {
+      name b.c
+      inside 60.000000
+      leg0 b
+      leg1 c
+    }
+  }
+}
+
