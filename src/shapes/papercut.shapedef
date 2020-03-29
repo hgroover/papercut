@@ -869,3 +869,136 @@ shapedef Rhombic Dodecahedron
     SL:d-SA:a
   }
 }
+
+# Replaced faulty built-in definition (2 missing joins and 1 incorrect join) 18-Mar-2020
+# Missing joins:
+# T2:b-TV:a
+# TH:b-TX:b
+# Incorrect:
+# SE:c-TX:a should be SE:c-TX:c
+shapedef Snub Cube 2
+{
+  menu
+  {
+    &Archimedean
+    &Snub Cube (corrected)	A7
+  }
+  brief Snub Cube-2
+  facetype S
+  {
+    a,1.00000000
+    b,1.00000000
+    c,1.00000000
+    d,1.00000000
+  }
+  facetype T
+  {
+    a,1.00000000
+    b,1.00000000
+    c,1.00000000
+  }
+  faces
+  {
+    S,SB,b,75.00
+    T,TC,b,-90.00
+    T,TT,b,90.00
+    T,T2,c,60.00
+    S,SC,c,75.00
+    T,TD,a,-90.00
+    T,TU,c,95.00
+    T,T3,c,70.00
+    S,SD,c,90.00
+    T,TE,a,100.00
+    T,TV,c,120.00
+    T,T4,c,100.00
+    S,SE,a,75.00
+    T,TF,a,75.00
+    T,TW,b,60.00
+    T,T5,c,80.00
+    S,SF,d,75.00
+    T,TG,c,-90.00
+    T,TX,b,75.00
+    T,T6,b,100.00
+    T,TH,a,100.00
+    T,TY,c,60.00
+    T,TI,a,96.00
+    T,TZ,b,90.00
+    T,TJ,b,65.00
+    T,TK,b,60.00
+    T,TL,a,90.00
+    T,TM,a,120.00
+    T,TN,a,75.00
+    T,TO,b,55.00
+    T,TP,b,75.00
+    T,TQ,b,120.00
+    T,TA,c,100.00
+    T,TR,b,95.00
+    S,SA,c,90.00
+    T,TB,b,-90.00
+    T,TS,b,90.00
+    T,T1,c,90.00
+  }
+  joins
+  {
+    SA:a-TC:b
+    SA:b-TG:c
+    SA:c-TD:a
+    SB:a-TI:b
+    SB:c-TJ:a
+    SD:d-TL:a
+    SE:a-TV:b
+    SE:b-TW:c
+    SE:c-TX:c
+    SF:b-T5:c
+    T1:a-TZ:b
+    T1:b-T2:c
+    T1:c-SD:b
+    T2:a-T4:c
+    T3:b-SF:a
+    T4:a-SF:c
+    T5:b-T6:c
+    TA:b-TB:c
+    TA:c-T3:a
+    TB:a-SA:d
+    TB:b-T5:a
+    TC:a-TE:c
+    TD:b-TX:a
+    TD:c-T6:a
+    TE:b-TF:c
+    TF:a-SB:d
+    TG:a-TF:b
+    TG:b-TH:c
+    TH:a-TJ:c
+	TH:b-TX:b
+    TI:a-TK:c
+    TK:b-TL:c
+    TM:a-TL:b
+    TM:c-SB:b
+    TN:b-TU:c
+    TN:c-TM:b
+    TO:a-SC:d
+    TO:b-TI:c
+    TO:c-TE:a
+    TP:a-TA:a
+    TP:b-SC:a
+    TP:c-TC:c
+    TQ:a-SC:c
+    TQ:b-TS:c
+    TQ:c-TK:a
+    TR:a-T3:c
+    TR:b-TY:a
+    TR:c-SC:b
+    TS:a-TY:c
+    TS:b-SD:a
+    TT:a-SD:c
+    TT:b-TV:c
+    TT:c-TN:a
+    TU:a-SE:d
+    TU:b-TJ:b
+	TV:a-T2:b
+    TW:a-T4:b
+    TW:b-T6:b
+    TY:b-TZ:c
+    TZ:a-SF:d
+  }
+}
