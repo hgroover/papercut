@@ -1,0 +1,11 @@
+:Base PaperCut.hlp
+1 Help contents=main_index
+1 Paper modelling using PaperCut=HIDR_DOC1TYPE
+1 Construction tips=building_models
+1 Web links=web_links
+1 Menus
+2 File menu=menu_file
+2 Edit menu=menu_edit
+2 View menu=menu_view
+2 Window menu=menu_window
+2 Help menu=menu_help

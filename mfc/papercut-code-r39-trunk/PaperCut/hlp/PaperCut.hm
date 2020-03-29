@@ -1,0 +1,63 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_CREATE_KEPLER                       0x18038
+HID_CREATE_CUBE                         0x18041
+HID_ARCHIMEDEAN_CUBOCTAHEDRON           0x18043
+HID_ARCHIMEDEAN_BUCKYBALL               0x18044
+HID_ARCHIMEDEAN_SNUBCUBE                0x18045
+HID_ARCHIMEDEAN_TRUNCATEDOCTAHEDRON     0x18046
+HID_ARCHIMEDEAN_ESCHER                  0x18047
+HID_ARCHIMEDEAN_PENTAKISDODECAHEDRON    0x18048
+HID_COMPOUND_CUBE_OCTAHEDRON            0x18049
+HID_COMPOUNDS_CUBE_OCTAHEDRON           0x1804B
+HID_COMPOUNDS_ICOSA_DODECA              0x1804C
+HID_ARCHIMEDEAN_TRUNCATEDTETRAHEDRON    0x18051
+HID_SHAPE_K                             0x18804
+HID_EDIT_CLIP                           0x1880C
+HID_SHAPE_MEDIAMANAGER                  0x18812
+HID_MENU_SETIMAGECAPTION                0x18813
+HID_FILE_SAVE_DEFINITION                0x18854
+HID_UPDATE_LAYOUT_MENU                  0x18855
+HID_SHAPEDEF_01                         0x188B9
+HID_SHAPEDEF_02                         0x188BA
+HID_SHAPEDEF_99                         0x1891B
+HID_SHAPEDEF_999                        0x18C9F
+HID_JOIN_EDGE_01                        0x18CA1
+HID_JOIN_EDGE_02                        0x18CA2
+HID_JOIN_EDGE_99                        0x18D03
+HID_JOIN_EDGE_999                       0x19087
+HID_JOIN_01                             0x19089
+HID_MENU_JOINEDGE                       0x1908A
+HID_CREATE_ZONOHEDRA                    0x1908E
+HID_CREATE_ESCHER                       0x1908F
+HID_FILE_IMPORT                         0x19091
+HID_IMPORT_OFF                          0x19092
+HID_FILE_IMPORT37011                    0x19093
+ 
+// Prompts (IDP_*) 
+HIDP_OLE_INIT_FAILED                    0x30065
+HIDP_SOCKETS_INIT_FAILED                0x30068
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_PAPERCTYPE                         0x20081
+HIDR_PAPERCUT_TYPERESOURCE              0x20082
+HIDR_RIGHTCLICK                         0x2008B
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_DOCKABLE_VIEWCONTROL               0x20082
+HIDD_ASKSHAPE_EXTENSION                 0x20086
+HIDD_LAYOUT_SUMMARY                     0x20088
+HIDD_EDIT_FACE                          0x2008C
+HIDD_SELECT_STELLATION                  0x2008D
+HIDD_PREFTABS_DRAWING                   0x20093
+HIDD_PREFTABS_LAYOUT                    0x20094
+HIDD_EDIT_DICTIONARY                    0x20095
+HIDD_CLIP_DELETE                        0x20096
+HIDD_MEDIA_MANAGER                      0x20097
+HIDD_GET_DESTINATION_DIR                0x20098
+HIDD_LAYOUT_SPLIT                       0x20099
+HIDD_GET_INDENT                         0x2009A
+ 
+// Frame Controls (IDW_*) 
