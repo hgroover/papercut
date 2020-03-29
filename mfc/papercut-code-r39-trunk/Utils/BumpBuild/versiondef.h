@@ -1,0 +1,3 @@
+#define VER_STR	"1.00"
+#define	BUILD_NUM	93
+#define	BUILD_TIMESTAMP	1145143096
