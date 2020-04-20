@@ -13,7 +13,10 @@ import argparse
 import sys
 import os
 
-SCRIPT_VER = '1.00'
+SCRIPT_VER = '1.01'
+# History:
+# 1.00 - First functional version
+# 1.01 - Enumerate faces by vertex count, set threshold alarm
 
 parser = argparse.ArgumentParser( description = 'Obj2Off v' + SCRIPT_VER )
 parser.add_argument( 'InputObj', nargs=1, help = 'Obj file to read' )
@@ -30,8 +33,13 @@ print( 'obj2off v%s: reading %s, writing %s' % (SCRIPT_VER, args.InputObj[0], ar
 LineCount = 0
 VertexCount = 0
 FaceCount = 0
+WarningThreshold = 4
+ErrorThreshold = 0
+WarningCount = 0
+ErrorCount = 0
 v = []
 f = []
+counts = {}
 with open(args.InputObj[0]) as inp:
   s = inp.readline()
   while s:
@@ -48,6 +56,17 @@ with open(args.InputObj[0]) as inp:
       # them now to absolute indices. Normal indices are origin:1 and we need to convert to origin:0
       fl = s.split()
       fv = []
+      # Keep count of each n-gon type - dict uses string
+      fc = len(fl)-1
+      fcs = '%d' % (fc)
+      if fcs in counts:
+        counts[fcs] = counts[fcs] + 1
+      else:
+        counts[fcs] = 1
+      if ErrorThreshold > 0 and fc > ErrorThreshold:
+        ErrorCount = ErrorCount + 1
+      elif WarningThreshold > 0 and fc > WarningThreshold:
+        WarningCount = WarningCount + 1
       for flv in fl[1:]:
         fi = int(flv.split('/')[0])
         if fi < 0:
@@ -59,6 +78,15 @@ with open(args.InputObj[0]) as inp:
       FaceCount = FaceCount + 1
     s = inp.readline()
 print( 'Read %d lines, %d vertices, %d faces' % (LineCount, VertexCount, FaceCount) )
+for FaceSides, TypeCount in counts.items():
+  print( '  %d X %s-gon' % (TypeCount, FaceSides))
+
+if ErrorCount > 0:
+  print( '%d errors due to faces exceeding maximum side count %d. Aborting' % (ErrorCount, ErrorThreshold))
+  sys.exit(1)
+  
+if WarningCount > 0:
+  print( 'Warning: %d faces had a side count exceeding %d' % (WarningCount, WarningThreshold))
 
 with open(args.OutputOff[0], 'w') as outp:
   outp.write('OFF\n')
